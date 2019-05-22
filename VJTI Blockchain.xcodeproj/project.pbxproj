@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1A22956A6900B1C1EB /* AppDelegate.swift */; };
+		E445EA1D22956A6900B1C1EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* FirstViewController.swift */; };
+		E445EA1F22956A6900B1C1EB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1E22956A6900B1C1EB /* SecondViewController.swift */; };
+		E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2022956A6900B1C1EB /* Main.storyboard */; };
+		E445EA2422956A6B00B1C1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2322956A6B00B1C1EB /* Assets.xcassets */; };
+		E445EA2722956A6B00B1C1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */; };
+		E445EA3222956A6B00B1C1EB /* VJTI_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA3122956A6B00B1C1EB /* VJTI_BlockchainTests.swift */; };
+		E445EA3D22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA3C22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E445EA2E22956A6B00B1C1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E445EA0F22956A6900B1C1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E445EA1622956A6900B1C1EB;
+			remoteInfo = "VJTI Blockchain";
+		};
+		E445EA3922956A6B00B1C1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E445EA0F22956A6900B1C1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E445EA1622956A6900B1C1EB;
+			remoteInfo = "VJTI Blockchain";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E445EA1C22956A6900B1C1EB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E445EA1E22956A6900B1C1EB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E445EA2122956A6900B1C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E445EA2322956A6B00B1C1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E445EA2622956A6B00B1C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E445EA2822956A6B00B1C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E445EA2D22956A6B00B1C1EB /* VJTI BlockchainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VJTI BlockchainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445EA3122956A6B00B1C1EB /* VJTI_BlockchainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VJTI_BlockchainTests.swift; sourceTree = "<group>"; };
+		E445EA3322956A6B00B1C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E445EA3822956A6B00B1C1EB /* VJTI BlockchainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VJTI BlockchainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445EA3C22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VJTI_BlockchainUITests.swift; sourceTree = "<group>"; };
+		E445EA3E22956A6B00B1C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E445EA1422956A6900B1C1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA2A22956A6B00B1C1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA3522956A6B00B1C1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E445EA0E22956A6900B1C1EB = {
+			isa = PBXGroup;
+			children = (
+				E445EA1922956A6900B1C1EB /* VJTI Blockchain */,
+				E445EA3022956A6B00B1C1EB /* VJTI BlockchainTests */,
+				E445EA3B22956A6B00B1C1EB /* VJTI BlockchainUITests */,
+				E445EA1822956A6900B1C1EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E445EA1822956A6900B1C1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */,
+				E445EA2D22956A6B00B1C1EB /* VJTI BlockchainTests.xctest */,
+				E445EA3822956A6B00B1C1EB /* VJTI BlockchainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA1A22956A6900B1C1EB /* AppDelegate.swift */,
+				E445EA1C22956A6900B1C1EB /* FirstViewController.swift */,
+				E445EA1E22956A6900B1C1EB /* SecondViewController.swift */,
+				E445EA2022956A6900B1C1EB /* Main.storyboard */,
+				E445EA2322956A6B00B1C1EB /* Assets.xcassets */,
+				E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */,
+				E445EA2822956A6B00B1C1EB /* Info.plist */,
+			);
+			path = "VJTI Blockchain";
+			sourceTree = "<group>";
+		};
+		E445EA3022956A6B00B1C1EB /* VJTI BlockchainTests */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA3122956A6B00B1C1EB /* VJTI_BlockchainTests.swift */,
+				E445EA3322956A6B00B1C1EB /* Info.plist */,
+			);
+			path = "VJTI BlockchainTests";
+			sourceTree = "<group>";
+		};
+		E445EA3B22956A6B00B1C1EB /* VJTI BlockchainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA3C22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift */,
+				E445EA3E22956A6B00B1C1EB /* Info.plist */,
+			);
+			path = "VJTI BlockchainUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E445EA1622956A6900B1C1EB /* VJTI Blockchain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E445EA4122956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI Blockchain" */;
+			buildPhases = (
+				E445EA1322956A6900B1C1EB /* Sources */,
+				E445EA1422956A6900B1C1EB /* Frameworks */,
+				E445EA1522956A6900B1C1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VJTI Blockchain";
+			productName = "VJTI Blockchain";
+			productReference = E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E445EA2C22956A6B00B1C1EB /* VJTI BlockchainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E445EA4422956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI BlockchainTests" */;
+			buildPhases = (
+				E445EA2922956A6B00B1C1EB /* Sources */,
+				E445EA2A22956A6B00B1C1EB /* Frameworks */,
+				E445EA2B22956A6B00B1C1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E445EA2F22956A6B00B1C1EB /* PBXTargetDependency */,
+			);
+			name = "VJTI BlockchainTests";
+			productName = "VJTI BlockchainTests";
+			productReference = E445EA2D22956A6B00B1C1EB /* VJTI BlockchainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E445EA3722956A6B00B1C1EB /* VJTI BlockchainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E445EA4722956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI BlockchainUITests" */;
+			buildPhases = (
+				E445EA3422956A6B00B1C1EB /* Sources */,
+				E445EA3522956A6B00B1C1EB /* Frameworks */,
+				E445EA3622956A6B00B1C1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E445EA3A22956A6B00B1C1EB /* PBXTargetDependency */,
+			);
+			name = "VJTI BlockchainUITests";
+			productName = "VJTI BlockchainUITests";
+			productReference = E445EA3822956A6B00B1C1EB /* VJTI BlockchainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E445EA0F22956A6900B1C1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Veermata Jijabai Technological Institute";
+				TargetAttributes = {
+					E445EA1622956A6900B1C1EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E445EA2C22956A6B00B1C1EB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E445EA1622956A6900B1C1EB;
+					};
+					E445EA3722956A6B00B1C1EB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E445EA1622956A6900B1C1EB;
+					};
+				};
+			};
+			buildConfigurationList = E445EA1222956A6900B1C1EB /* Build configuration list for PBXProject "VJTI Blockchain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E445EA0E22956A6900B1C1EB;
+			productRefGroup = E445EA1822956A6900B1C1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E445EA1622956A6900B1C1EB /* VJTI Blockchain */,
+				E445EA2C22956A6B00B1C1EB /* VJTI BlockchainTests */,
+				E445EA3722956A6B00B1C1EB /* VJTI BlockchainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E445EA1522956A6900B1C1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E445EA2722956A6B00B1C1EB /* LaunchScreen.storyboard in Resources */,
+				E445EA2422956A6B00B1C1EB /* Assets.xcassets in Resources */,
+				E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA2B22956A6B00B1C1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA3622956A6B00B1C1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E445EA1322956A6900B1C1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E445EA1F22956A6900B1C1EB /* SecondViewController.swift in Sources */,
+				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
+				E445EA1D22956A6900B1C1EB /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA2922956A6B00B1C1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E445EA3222956A6B00B1C1EB /* VJTI_BlockchainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E445EA3422956A6B00B1C1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E445EA3D22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E445EA2F22956A6B00B1C1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E445EA1622956A6900B1C1EB /* VJTI Blockchain */;
+			targetProxy = E445EA2E22956A6B00B1C1EB /* PBXContainerItemProxy */;
+		};
+		E445EA3A22956A6B00B1C1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E445EA1622956A6900B1C1EB /* VJTI Blockchain */;
+			targetProxy = E445EA3922956A6B00B1C1EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E445EA2022956A6900B1C1EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E445EA2122956A6900B1C1EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E445EA2622956A6B00B1C1EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E445EA3F22956A6B00B1C1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E445EA4022956A6B00B1C1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E445EA4222956A6B00B1C1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI Blockchain/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E445EA4322956A6B00B1C1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI Blockchain/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E445EA4522956A6B00B1C1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI BlockchainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-BlockchainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VJTI Blockchain.app/VJTI Blockchain";
+			};
+			name = Debug;
+		};
+		E445EA4622956A6B00B1C1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI BlockchainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-BlockchainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VJTI Blockchain.app/VJTI Blockchain";
+			};
+			name = Release;
+		};
+		E445EA4822956A6B00B1C1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI BlockchainUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-BlockchainUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VJTI Blockchain";
+			};
+			name = Debug;
+		};
+		E445EA4922956A6B00B1C1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VJTI BlockchainUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-BlockchainUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VJTI Blockchain";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E445EA1222956A6900B1C1EB /* Build configuration list for PBXProject "VJTI Blockchain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E445EA3F22956A6B00B1C1EB /* Debug */,
+				E445EA4022956A6B00B1C1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E445EA4122956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI Blockchain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E445EA4222956A6B00B1C1EB /* Debug */,
+				E445EA4322956A6B00B1C1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E445EA4422956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI BlockchainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E445EA4522956A6B00B1C1EB /* Debug */,
+				E445EA4622956A6B00B1C1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E445EA4722956A6B00B1C1EB /* Build configuration list for PBXNativeTarget "VJTI BlockchainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E445EA4822956A6B00B1C1EB /* Debug */,
+				E445EA4922956A6B00B1C1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E445EA0F22956A6900B1C1EB /* Project object */;
+}
