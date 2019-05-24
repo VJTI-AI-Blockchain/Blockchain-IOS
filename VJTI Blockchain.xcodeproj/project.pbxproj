@@ -18,6 +18,8 @@
 		E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */; };
 		E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA872296B04C00B1C1EB /* TransactionCell.swift */; };
 		E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA892296B2AD00B1C1EB /* TransactionModel.swift */; };
+		E4DC9D372297CCBE00CBAB0E /* signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC9D362297CCBE00CBAB0E /* signup.storyboard */; };
+		E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousTransactionsTableViewController.swift; sourceTree = "<group>"; };
 		E445EA872296B04C00B1C1EB /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		E445EA892296B2AD00B1C1EB /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		E4DC9D362297CCBE00CBAB0E /* signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = signup.storyboard; sourceTree = "<group>"; };
+		E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +109,9 @@
 		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
 			isa = PBXGroup;
 			children = (
-				E445EA842296AD4E00B1C1EB /* PreviousTransaction */,
+				E4DC9D352297CBDE00CBAB0E /* LoggedInUser */,
+				E4DC9D342297CBA400CBAB0E /* Signup */,
 				E445EA1A22956A6900B1C1EB /* AppDelegate.swift */,
-				E445EA1C22956A6900B1C1EB /* HomeViewController.swift */,
-				E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */,
-				E445EA2022956A6900B1C1EB /* Main.storyboard */,
 				E445EA2322956A6B00B1C1EB /* Assets.xcassets */,
 				E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */,
 				E445EA2822956A6B00B1C1EB /* Info.plist */,
@@ -143,6 +145,26 @@
 				E445EA892296B2AD00B1C1EB /* TransactionModel.swift */,
 			);
 			path = PreviousTransaction;
+			sourceTree = "<group>";
+		};
+		E4DC9D342297CBA400CBAB0E /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				E4DC9D362297CCBE00CBAB0E /* signup.storyboard */,
+				E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		E4DC9D352297CBDE00CBAB0E /* LoggedInUser */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA842296AD4E00B1C1EB /* PreviousTransaction */,
+				E445EA1C22956A6900B1C1EB /* HomeViewController.swift */,
+				E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */,
+				E445EA2022956A6900B1C1EB /* Main.storyboard */,
+			);
+			path = LoggedInUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +273,7 @@
 			files = (
 				E445EA2722956A6B00B1C1EB /* LaunchScreen.storyboard in Resources */,
 				E445EA2422956A6B00B1C1EB /* Assets.xcassets in Resources */,
+				E4DC9D372297CCBE00CBAB0E /* signup.storyboard in Resources */,
 				E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */,
+				E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */,
 				E445EA1F22956A6900B1C1EB /* AllTransactionsViewController.swift in Sources */,
 				E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */,
 				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
