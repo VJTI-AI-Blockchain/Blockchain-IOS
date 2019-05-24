@@ -69,6 +69,9 @@
                                 <rect key="frame" x="176.5" y="580" width="61" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="839-iY-hKO" kind="show" id="Szx-sp-cUr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4a-QT-bei">
                                 <rect key="frame" x="43" y="479" width="77" height="24"/>
@@ -107,6 +110,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qu4-Se-NCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-288.40579710144931" y="219.64285714285714"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bQ0-AH-iQW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="839-iY-hKO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAl-uQ-MZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="132"/>
         </scene>
     </scenes>
     <resources>
