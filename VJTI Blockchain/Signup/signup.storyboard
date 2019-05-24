@@ -70,7 +70,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="839-iY-hKO" kind="show" id="Szx-sp-cUr"/>
+                                    <segue destination="gMU-Sh-3AU" kind="show" id="oMf-sZ-Kfc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4a-QT-bei">
@@ -117,7 +117,47 @@
                 <viewControllerPlaceholder storyboardName="Main" id="839-iY-hKO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAl-uQ-MZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="132"/>
+            <point key="canvasLocation" x="1183" y="220"/>
+        </scene>
+        <!--Secret Pin Setup View Controller-->
+        <scene sceneID="z0W-yD-nLz">
+            <objects>
+                <viewController id="gMU-Sh-3AU" customClass="SecretPinSetupViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3UC-LV-z9E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup your transaction PIN (4 digits)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io9-m9-RVr">
+                                <rect key="frame" x="40" y="219.5" width="334.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezo-rT-YWB" customClass="UIStackView">
+                                <rect key="frame" x="43" y="254" width="328" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="551" id="jpQ-pM-5FT"/>
+                                    <constraint firstAttribute="width" constant="328" id="kXo-rT-mve"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ezo-rT-YWB" firstAttribute="centerX" secondItem="IgL-f2-Jog" secondAttribute="centerX" id="7K4-Iy-esQ"/>
+                            <constraint firstItem="io9-m9-RVr" firstAttribute="centerX" secondItem="IgL-f2-Jog" secondAttribute="centerX" id="Jap-im-Pat"/>
+                            <constraint firstItem="ezo-rT-YWB" firstAttribute="top" secondItem="io9-m9-RVr" secondAttribute="bottom" constant="8" id="e8T-S6-hDk"/>
+                            <constraint firstItem="ezo-rT-YWB" firstAttribute="top" secondItem="IgL-f2-Jog" secondAttribute="top" constant="210" id="wD8-x6-Nao"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IgL-f2-Jog"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordStackView" destination="ezo-rT-YWB" id="5h9-ZC-8Z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84J-sJ-XrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.82608695652175" y="219.64285714285714"/>
         </scene>
     </scenes>
     <resources>
