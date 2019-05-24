@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1A22956A6900B1C1EB /* AppDelegate.swift */; };
-		E445EA1D22956A6900B1C1EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* FirstViewController.swift */; };
-		E445EA1F22956A6900B1C1EB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1E22956A6900B1C1EB /* SecondViewController.swift */; };
+		E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* HomeViewController.swift */; };
+		E445EA1F22956A6900B1C1EB /* AllTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */; };
 		E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2022956A6900B1C1EB /* Main.storyboard */; };
 		E445EA2422956A6B00B1C1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2322956A6B00B1C1EB /* Assets.xcassets */; };
 		E445EA2722956A6B00B1C1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */; };
 		E445EA3222956A6B00B1C1EB /* VJTI_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA3122956A6B00B1C1EB /* VJTI_BlockchainTests.swift */; };
 		E445EA3D22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA3C22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift */; };
+		E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */; };
+		E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA872296B04C00B1C1EB /* TransactionCell.swift */; };
+		E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA892296B2AD00B1C1EB /* TransactionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,8 @@
 /* Begin PBXFileReference section */
 		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E445EA1C22956A6900B1C1EB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E445EA1E22956A6900B1C1EB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E445EA1C22956A6900B1C1EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsViewController.swift; sourceTree = "<group>"; };
 		E445EA2122956A6900B1C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E445EA2322956A6B00B1C1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E445EA2622956A6B00B1C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		E445EA3822956A6B00B1C1EB /* VJTI BlockchainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VJTI BlockchainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA3C22956A6B00B1C1EB /* VJTI_BlockchainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VJTI_BlockchainUITests.swift; sourceTree = "<group>"; };
 		E445EA3E22956A6B00B1C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousTransactionsTableViewController.swift; sourceTree = "<group>"; };
+		E445EA872296B04C00B1C1EB /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		E445EA892296B2AD00B1C1EB /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				E445EA842296AD4E00B1C1EB /* PreviousTransaction */,
 				E445EA1A22956A6900B1C1EB /* AppDelegate.swift */,
-				E445EA1C22956A6900B1C1EB /* FirstViewController.swift */,
-				E445EA1E22956A6900B1C1EB /* SecondViewController.swift */,
+				E445EA1C22956A6900B1C1EB /* HomeViewController.swift */,
+				E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */,
 				E445EA2022956A6900B1C1EB /* Main.storyboard */,
 				E445EA2322956A6B00B1C1EB /* Assets.xcassets */,
 				E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */,
@@ -126,6 +133,16 @@
 				E445EA3E22956A6B00B1C1EB /* Info.plist */,
 			);
 			path = "VJTI BlockchainUITests";
+			sourceTree = "<group>";
+		};
+		E445EA842296AD4E00B1C1EB /* PreviousTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */,
+				E445EA872296B04C00B1C1EB /* TransactionCell.swift */,
+				E445EA892296B2AD00B1C1EB /* TransactionModel.swift */,
+			);
+			path = PreviousTransaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E445EA1F22956A6900B1C1EB /* SecondViewController.swift in Sources */,
+				E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */,
+				E445EA1F22956A6900B1C1EB /* AllTransactionsViewController.swift in Sources */,
+				E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */,
 				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
-				E445EA1D22956A6900B1C1EB /* FirstViewController.swift in Sources */,
+				E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */,
+				E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
