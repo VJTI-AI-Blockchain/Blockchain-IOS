@@ -18,6 +18,7 @@
 		E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */; };
 		E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA872296B04C00B1C1EB /* TransactionCell.swift */; };
 		E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA892296B2AD00B1C1EB /* TransactionModel.swift */; };
+		E46A5AA6229B48D100C1DF9B /* ReceiveCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */; };
 		E4CB8C9D229AD69700A532CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8C9C229AD69700A532CC /* User.swift */; };
 		E4CB8CDF229B1E0200A532CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */; };
 		E4CB8CE0229B1E0200A532CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4CB8CD3229B1E0200A532CC /* README.md */; };
@@ -75,6 +76,7 @@
 		E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousTransactionsTableViewController.swift; sourceTree = "<group>"; };
 		E445EA872296B04C00B1C1EB /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		E445EA892296B2AD00B1C1EB /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveCoinViewController.swift; sourceTree = "<group>"; };
 		E4CB8C9C229AD69700A532CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
 		E4CB8CD3229B1E0200A532CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -205,6 +207,14 @@
 			path = PreviousTransaction;
 			sourceTree = "<group>";
 		};
+		E46A5AA4229B48A400C1DF9B /* CoinTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */,
+			);
+			path = CoinTransaction;
+			sourceTree = "<group>";
+		};
 		E4CB8CD1229B1E0200A532CC /* CryptorECC */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +256,7 @@
 		E4DC9D352297CBDE00CBAB0E /* LoggedInUser */ = {
 			isa = PBXGroup;
 			children = (
+				E46A5AA4229B48A400C1DF9B /* CoinTransaction */,
 				E4CB8CEC229B22E600A532CC /* Profile */,
 				E445EA842296AD4E00B1C1EB /* PreviousTransaction */,
 				E445EA1C22956A6900B1C1EB /* HomeViewController.swift */,
@@ -453,6 +464,7 @@
 				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
 				E4CB8CE2229B1E0200A532CC /* ECSignable.swift in Sources */,
 				E4CB8CE4229B1E0200A532CC /* ECError.swift in Sources */,
+				E46A5AA6229B48D100C1DF9B /* ReceiveCoinViewController.swift in Sources */,
 				E4CB8CE8229B1E0200A532CC /* Data+Extensions.swift in Sources */,
 				E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */,
 				E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */,

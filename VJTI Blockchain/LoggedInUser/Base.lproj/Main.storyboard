@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="2219" y="-942"/>
         </scene>
-        <!--View Controller-->
+        <!--Receive Coin View Controller-->
         <scene sceneID="PgG-5Y-b5v">
             <objects>
-                <viewController id="6hz-AD-LJz" sceneMemberID="viewController">
+                <viewController id="6hz-AD-LJz" customClass="ReceiveCoinViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="43Q-OE-w1j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,21 +112,33 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qr_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-6m-6ff">
                                 <rect key="frame" x="60" y="495" width="295" height="266"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-fg-9R8">
+                                <rect key="frame" x="152" y="436.5" width="110.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ont-Yx-rjP" firstAttribute="bottom" secondItem="Vpy-6m-6ff" secondAttribute="bottom" constant="52" id="10h-Tw-i2e"/>
                             <constraint firstItem="ont-Yx-rjP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eS3-KG-wBO" secondAttribute="trailing" symbolic="YES" id="5k7-Mr-fbR"/>
+                            <constraint firstItem="bD0-fg-9R8" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="5od-ji-16S"/>
                             <constraint firstItem="Vpy-6m-6ff" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="CeL-P1-nfV"/>
                             <constraint firstItem="YG0-zl-Jgq" firstAttribute="top" secondItem="ont-Yx-rjP" secondAttribute="top" constant="100" id="FFk-pi-MjK"/>
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="top" secondItem="YG0-zl-Jgq" secondAttribute="bottom" constant="56" id="Fyd-B6-kI5"/>
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="centerY" secondItem="ont-Yx-rjP" secondAttribute="centerY" constant="-46.5" id="Nbe-X6-mS6"/>
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="leading" secondItem="ont-Yx-rjP" secondAttribute="leading" constant="70" id="elB-GI-kQk"/>
+                            <constraint firstItem="bD0-fg-9R8" firstAttribute="firstBaseline" secondItem="eS3-KG-wBO" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="eqt-um-VKu"/>
                             <constraint firstItem="Vpy-6m-6ff" firstAttribute="top" secondItem="eS3-KG-wBO" secondAttribute="bottom" constant="59" id="f0X-NR-jKO"/>
                             <constraint firstItem="YG0-zl-Jgq" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="or5-A8-DFZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ont-Yx-rjP"/>
                     </view>
+                    <connections>
+                        <outlet property="publicKeyQRImage" destination="Vpy-6m-6ff" id="OVm-9b-dUy"/>
+                        <outlet property="userNameLabel" destination="bD0-fg-9R8" id="Bg3-Sh-gsM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcb-mC-Aw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
