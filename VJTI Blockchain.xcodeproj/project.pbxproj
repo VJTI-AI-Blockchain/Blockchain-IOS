@@ -19,6 +19,20 @@
 		E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */; };
 		E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA872296B04C00B1C1EB /* TransactionCell.swift */; };
 		E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA892296B2AD00B1C1EB /* TransactionModel.swift */; };
+		E4CB8C9D229AD69700A532CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8C9C229AD69700A532CC /* User.swift */; };
+		E4CB8CAA229B131000A532CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8C9F229B130F00A532CC /* EllipticCurve.swift */; };
+		E4CB8CAB229B131000A532CC /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA0229B130F00A532CC /* ECPublicKey.swift */; };
+		E4CB8CAC229B131000A532CC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA1229B130F00A532CC /* ECSignable.swift */; };
+		E4CB8CAD229B131000A532CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA2229B130F00A532CC /* SSLPointerTricks.swift */; };
+		E4CB8CAE229B131000A532CC /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA3229B130F00A532CC /* ECError.swift */; };
+		E4CB8CAF229B131000A532CC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA4229B130F00A532CC /* ECPrivateKey.swift */; };
+		E4CB8CB0229B131000A532CC /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA5229B130F00A532CC /* ECDecryptable.swift */; };
+		E4CB8CB1229B131000A532CC /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA6229B130F00A532CC /* Data+Extensions.swift */; };
+		E4CB8CB2229B131000A532CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA7229B130F00A532CC /* ASN1.swift */; };
+		E4CB8CB3229B131000A532CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA8229B130F00A532CC /* ECSignature.swift */; };
+		E4CB8CB4229B131000A532CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CA9229B130F00A532CC /* ECEncryptable.swift */; };
+		E4CB8CB6229B1BEC00A532CC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4CB8CB5229B1BEC00A532CC /* LICENSE.txt */; };
+		E4CB8CB8229B1BFB00A532CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4CB8CB7229B1BFB00A532CC /* README.md */; };
 		E4DC9D372297CCBE00CBAB0E /* signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC9D362297CCBE00CBAB0E /* signup.storyboard */; };
 		E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */; };
 		E4F3BB512298010B0050E772 /* SecretPinSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3BB502298010B0050E772 /* SecretPinSetupViewController.swift */; };
@@ -62,6 +76,20 @@
 		E445EA852296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousTransactionsTableViewController.swift; sourceTree = "<group>"; };
 		E445EA872296B04C00B1C1EB /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		E445EA892296B2AD00B1C1EB /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		E4CB8C9C229AD69700A532CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E4CB8C9F229B130F00A532CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
+		E4CB8CA0229B130F00A532CC /* ECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
+		E4CB8CA1229B130F00A532CC /* ECSignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignable.swift; sourceTree = "<group>"; };
+		E4CB8CA2229B130F00A532CC /* SSLPointerTricks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLPointerTricks.swift; sourceTree = "<group>"; };
+		E4CB8CA3229B130F00A532CC /* ECError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECError.swift; sourceTree = "<group>"; };
+		E4CB8CA4229B130F00A532CC /* ECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
+		E4CB8CA5229B130F00A532CC /* ECDecryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDecryptable.swift; sourceTree = "<group>"; };
+		E4CB8CA6229B130F00A532CC /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		E4CB8CA7229B130F00A532CC /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
+		E4CB8CA8229B130F00A532CC /* ECSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignature.swift; sourceTree = "<group>"; };
+		E4CB8CA9229B130F00A532CC /* ECEncryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECEncryptable.swift; sourceTree = "<group>"; };
+		E4CB8CB5229B1BEC00A532CC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = ../../LICENSE.txt; sourceTree = "<group>"; };
+		E4CB8CB7229B1BFB00A532CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		E4DC9D362297CCBE00CBAB0E /* signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = signup.storyboard; sourceTree = "<group>"; };
 		E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E4F3BB502298010B0050E772 /* SecretPinSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretPinSetupViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +164,7 @@
 		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				E4CB8C9E229B130F00A532CC /* CryptorECC */,
 				E4F3BB542298F8C90050E772 /* VJTI Blockchain.entitlements */,
 				E4DC9D352297CBDE00CBAB0E /* LoggedInUser */,
 				E4DC9D342297CBA400CBAB0E /* Signup */,
@@ -143,6 +172,7 @@
 				E445EA2322956A6B00B1C1EB /* Assets.xcassets */,
 				E445EA2522956A6B00B1C1EB /* LaunchScreen.storyboard */,
 				E445EA2822956A6B00B1C1EB /* Info.plist */,
+				E4CB8C9C229AD69700A532CC /* User.swift */,
 			);
 			path = "VJTI Blockchain";
 			sourceTree = "<group>";
@@ -173,6 +203,27 @@
 				E445EA892296B2AD00B1C1EB /* TransactionModel.swift */,
 			);
 			path = PreviousTransaction;
+			sourceTree = "<group>";
+		};
+		E4CB8C9E229B130F00A532CC /* CryptorECC */ = {
+			isa = PBXGroup;
+			children = (
+				E4CB8CB7229B1BFB00A532CC /* README.md */,
+				E4CB8CB5229B1BEC00A532CC /* LICENSE.txt */,
+				E4CB8C9F229B130F00A532CC /* EllipticCurve.swift */,
+				E4CB8CA0229B130F00A532CC /* ECPublicKey.swift */,
+				E4CB8CA1229B130F00A532CC /* ECSignable.swift */,
+				E4CB8CA2229B130F00A532CC /* SSLPointerTricks.swift */,
+				E4CB8CA3229B130F00A532CC /* ECError.swift */,
+				E4CB8CA4229B130F00A532CC /* ECPrivateKey.swift */,
+				E4CB8CA5229B130F00A532CC /* ECDecryptable.swift */,
+				E4CB8CA6229B130F00A532CC /* Data+Extensions.swift */,
+				E4CB8CA7229B130F00A532CC /* ASN1.swift */,
+				E4CB8CA8229B130F00A532CC /* ECSignature.swift */,
+				E4CB8CA9229B130F00A532CC /* ECEncryptable.swift */,
+			);
+			name = CryptorECC;
+			path = "../../../Desktop/Blockchain Assets/BlueECC-1.2.1/Sources/CryptorECC";
 			sourceTree = "<group>";
 		};
 		E4DC9D342297CBA400CBAB0E /* Signup */ = {
@@ -307,9 +358,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CB8CB8229B1BFB00A532CC /* README.md in Resources */,
 				E445EA2722956A6B00B1C1EB /* LaunchScreen.storyboard in Resources */,
 				E445EA2422956A6B00B1C1EB /* Assets.xcassets in Resources */,
 				E4DC9D372297CCBE00CBAB0E /* signup.storyboard in Resources */,
+				E4CB8CB6229B1BEC00A532CC /* LICENSE.txt in Resources */,
 				E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,12 +432,24 @@
 			files = (
 				E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */,
 				E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */,
+				E4CB8CAB229B131000A532CC /* ECPublicKey.swift in Sources */,
 				E4F3BB512298010B0050E772 /* SecretPinSetupViewController.swift in Sources */,
+				E4CB8CB3229B131000A532CC /* ECSignature.swift in Sources */,
 				E445EA1F22956A6900B1C1EB /* AllTransactionsViewController.swift in Sources */,
+				E4CB8CB0229B131000A532CC /* ECDecryptable.swift in Sources */,
+				E4CB8CB2229B131000A532CC /* ASN1.swift in Sources */,
 				E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */,
+				E4CB8CAF229B131000A532CC /* ECPrivateKey.swift in Sources */,
+				E4CB8C9D229AD69700A532CC /* User.swift in Sources */,
+				E4CB8CB4229B131000A532CC /* ECEncryptable.swift in Sources */,
+				E4CB8CAD229B131000A532CC /* SSLPointerTricks.swift in Sources */,
 				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
+				E4CB8CAC229B131000A532CC /* ECSignable.swift in Sources */,
+				E4CB8CAE229B131000A532CC /* ECError.swift in Sources */,
+				E4CB8CB1229B131000A532CC /* Data+Extensions.swift in Sources */,
 				E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */,
 				E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */,
+				E4CB8CAA229B131000A532CC /* EllipticCurve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

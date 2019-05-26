@@ -84,8 +84,8 @@ private extension SecretPinSetupViewController {
         }
         else {
             do {
-                try AppDelegate.keychain?.set(pinString! , key: "userPin")
-                
+                try User.setCredentials(pin: pinString!)
+
                 performSegue(withIdentifier: "successfuluserRegisterSeguey", sender: nil);
 
             } catch  {

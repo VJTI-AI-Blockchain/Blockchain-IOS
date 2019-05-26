@@ -60,16 +60,15 @@ class SignupViewController : UIViewController {
         }
         
         
-        let (publicKey, privateKey) = getKeyPair();
         
         do {
-            try AppDelegate.keychain?.set(publicKey , key: "public")
-            try AppDelegate.keychain?.set(privateKey, key: "private")
+            try User.setUserDetails(name: userName, email: userEmail)
             
             performSegue(withIdentifier: "setPinSeguey", sender: sender);
             
         } catch  {
-            print("Error in saving in keychain");
+            print("Error in saving user details");
+            //TODO handle error
         }
 
         
@@ -81,8 +80,4 @@ class SignupViewController : UIViewController {
         return emailCheckRegex.firstMatch(in: userEmail, options: [], range: range) != nil
     }
     
-    private func getKeyPair() -> (String, String) {
-        // TODO secp256r1 curve ECDA with SHA1PRNG random seed
-        return ("Public", "Private");
-    }
 }
