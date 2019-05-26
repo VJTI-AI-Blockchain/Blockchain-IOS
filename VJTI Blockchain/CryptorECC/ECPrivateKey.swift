@@ -100,7 +100,7 @@ public class ECPrivateKey {
         guard let der = Data(base64Encoded: pemComponents[2]) else {
             throw ECError.failedBase64Encoding
         }
-        if pemComponents[1] == "BEGINECPRIVATEKEY" {
+        if pemComponents[1] == "BEGINPRIVATEKEY" {
             try self.init(sec1DER: der)
         } else if pemComponents[1] == "BEGINPRIVATEKEY" {
             try self.init(pkcs8DER: der)
@@ -469,6 +469,6 @@ public class ECPrivateKey {
         let lines = base64String.split(to: 64)
         // Join those lines with a new line...
         let joinedLines = lines.joined(separator: "\n")
-        return "-----BEGIN EC PRIVATE KEY-----\n" + joinedLines + "\n-----END EC PRIVATE KEY-----"
+        return "-----BEGIN PRIVATE KEY-----\n" + joinedLines + "\n-----END PRIVATE KEY-----"
     }
 }
