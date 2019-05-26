@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB421F38EDDD58EC02F4097 /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961476D269393E4B6BEF0131 /* libPods-VJTI Blockchain.a */; };
 		E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1A22956A6900B1C1EB /* AppDelegate.swift */; };
 		E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* HomeViewController.swift */; };
 		E445EA1F22956A6900B1C1EB /* AllTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1E22956A6900B1C1EB /* AllTransactionsViewController.swift */; };
@@ -21,7 +22,6 @@
 		E4DC9D372297CCBE00CBAB0E /* signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC9D362297CCBE00CBAB0E /* signup.storyboard */; };
 		E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */; };
 		E4F3BB512298010B0050E772 /* SecretPinSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3BB502298010B0050E772 /* SecretPinSetupViewController.swift */; };
-		ED3CD6FF7C0DD6C2551CF2AB /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FA789300C4F052E1F3177 /* libPods-VJTI Blockchain.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		3F6CA4395E3058E956EDEED2 /* Pods-VJTI Blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.debug.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBBF79F766AE26B16AA694E /* Pods-VJTI Blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.release.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.release.xcconfig"; sourceTree = "<group>"; };
-		873FA789300C4F052E1F3177 /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		961476D269393E4B6BEF0131 /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E445EA1C22956A6900B1C1EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +65,7 @@
 		E4DC9D362297CCBE00CBAB0E /* signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = signup.storyboard; sourceTree = "<group>"; };
 		E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E4F3BB502298010B0050E772 /* SecretPinSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretPinSetupViewController.swift; sourceTree = "<group>"; };
+		E4F3BB542298F8C90050E772 /* VJTI Blockchain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VJTI Blockchain.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3CD6FF7C0DD6C2551CF2AB /* libPods-VJTI Blockchain.a in Frameworks */,
+				BEB421F38EDDD58EC02F4097 /* libPods-VJTI Blockchain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +106,7 @@
 		9ABEF907CEE527DDC1031CB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				873FA789300C4F052E1F3177 /* libPods-VJTI Blockchain.a */,
+				961476D269393E4B6BEF0131 /* libPods-VJTI Blockchain.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +136,7 @@
 		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				E4F3BB542298F8C90050E772 /* VJTI Blockchain.entitlements */,
 				E4DC9D352297CBDE00CBAB0E /* LoggedInUser */,
 				E4DC9D342297CBA400CBAB0E /* Signup */,
 				E445EA1A22956A6900B1C1EB /* AppDelegate.swift */,
@@ -205,7 +207,7 @@
 				E445EA1322956A6900B1C1EB /* Sources */,
 				E445EA1422956A6900B1C1EB /* Frameworks */,
 				E445EA1522956A6900B1C1EB /* Resources */,
-				B40F5B8962FA811D29131884 /* [CP] Copy Pods Resources */,
+				8E1E68AAD41E95025EF66283 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +266,11 @@
 				TargetAttributes = {
 					E445EA1622956A6900B1C1EB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					E445EA2C22956A6B00B1C1EB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -346,7 +353,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B40F5B8962FA811D29131884 /* [CP] Copy Pods Resources */ = {
+		8E1E68AAD41E95025EF66283 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,7 +560,9 @@
 			baseConfigurationReference = 3F6CA4395E3058E956EDEED2 /* Pods-VJTI Blockchain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VJTI Blockchain/VJTI Blockchain.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ99BDNV69;
 				INFOPLIST_FILE = "VJTI Blockchain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,7 +580,9 @@
 			baseConfigurationReference = 5DBBF79F766AE26B16AA694E /* Pods-VJTI Blockchain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VJTI Blockchain/VJTI Blockchain.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ99BDNV69;
 				INFOPLIST_FILE = "VJTI Blockchain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

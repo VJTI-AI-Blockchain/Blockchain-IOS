@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    static var keychain: Keychain?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let userLoggedIn = false
         
-        if userLoggedIn {
+        AppDelegate.keychain = Keychain(service: Bundle.main.bundleIdentifier!);
+        
+        
+        
+        if AppDelegate.keychain!["userPin"] != nil {
             let mainStoryBoard   = UIStoryboard(name: "Main", bundle: nil);
             let mainViewController = mainStoryBoard.instantiateViewController(withIdentifier: "MainInitController");
             self.window?.rootViewController = mainViewController

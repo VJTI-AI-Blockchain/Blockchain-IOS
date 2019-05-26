@@ -18,6 +18,20 @@ class SecretPinSetupViewController : UIViewController {
     var passwordContainerView: PasswordContainerView!
     let kPasswordDigits = 4
     
+    @IBOutlet weak var pinInstructionLabel: UILabel!
+    
+    var pinString : String?
+    var firstPinInp = true {
+        didSet {
+            if firstPinInp {
+                pinInstructionLabel.text = "Try Again! Setup your transaction PIN (4 digits)";
+            }
+            else {
+                pinInstructionLabel.text = "Confirm your pin";
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad();
         
@@ -51,16 +65,39 @@ extension SecretPinSetupViewController: PasswordInputCompleteProtocol {
 
 private extension SecretPinSetupViewController {
     func validation(_ input: String) -> Bool {
-        return input == "1234"
+        
+        if firstPinInp {
+            pinString = input
+            return true
+        }
+        else {
+            return pinString == input
+        }
     }
     
     func validationSuccess() {
-        print("*️⃣ success!")
-        dismiss(animated: true, completion: nil)
+        
+        if firstPinInp {
+            print("*️⃣ successful 1st pin entry")
+            passwordContainerView.clearInput()
+            firstPinInp = false
+        }
+        else {
+            do {
+                try AppDelegate.keychain?.set(pinString! , key: "userPin")
+                
+                performSegue(withIdentifier: "successfuluserRegisterSeguey", sender: nil);
+
+            } catch  {
+                print("Error in saving in keychain");
+                passwordContainerView.wrongPassword();
+            }
+        }
     }
     
     func validationFail() {
         print("*️⃣ failure!")
+        firstPinInp = true
         passwordContainerView.wrongPassword()
     }
 }
