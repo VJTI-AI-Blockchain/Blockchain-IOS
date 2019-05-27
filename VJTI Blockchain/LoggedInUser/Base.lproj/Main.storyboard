@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                <rect key="frame" x="141" y="418" width="132.00000000000006" height="83"/>
+                                <rect key="frame" x="141" y="418" width="132" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="3YV-6N-VqL"/>
                                 </constraints>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
+                                <rect key="frame" x="87" y="188" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
                                     <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>
@@ -149,7 +149,7 @@
         <!--Send Coins-->
         <scene sceneID="mk5-GL-Xmf">
             <objects>
-                <viewController title="Send Coins" id="8kf-lr-Bk8" sceneMemberID="viewController">
+                <viewController title="Send Coins" id="8kf-lr-Bk8" customClass="TransactionDetailsViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IS3-3V-gJP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,6 +208,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Send Coins"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="8kf-lr-Bk8" eventType="touchUpInside" id="WpA-7m-f9L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
                                 <rect key="frame" x="190" y="268" width="25" height="25"/>
@@ -221,10 +224,60 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SEI-u0-73J"/>
                     </view>
+                    <connections>
+                        <outlet property="coinInp" destination="4eh-uE-UJR" id="4XI-PB-wMC"/>
+                        <outlet property="messageInp" destination="s0L-0B-dEV" id="LVc-QK-V6W"/>
+                        <outlet property="userPubKeyInp" destination="GxF-Hx-kAn" id="miU-y9-4hL"/>
+                        <segue destination="3FA-Qa-9IV" kind="show" identifier="verifyTransactionSeguey" id="9kV-0K-bTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGg-Jc-AO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3231.884057971015" y="-1315.1785714285713"/>
+            <point key="canvasLocation" x="3265" y="-1308"/>
+        </scene>
+        <!--Verifying Transaction-->
+        <scene sceneID="pbN-No-43q">
+            <objects>
+                <viewController title="Verifying Transaction" id="3FA-Qa-9IV" customClass="VerifyPinViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qwG-L1-a0g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAO-6k-EgQ" customClass="UIStackView">
+                                <rect key="frame" x="53.5" y="306" width="307" height="407"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="C0W-bv-aLN"/>
+                                    <constraint firstAttribute="height" constant="407" id="b4B-og-gLb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify the transaction by putting your secret pin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixI-Vq-qzd">
+                                <rect key="frame" x="65" y="215" width="284" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="AhS-ev-Alf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ixI-Vq-qzd" firstAttribute="centerX" secondItem="QVq-RX-Pvu" secondAttribute="centerX" id="KlK-ZJ-KpK"/>
+                            <constraint firstItem="ixI-Vq-qzd" firstAttribute="top" secondItem="QVq-RX-Pvu" secondAttribute="top" constant="127" id="cG5-IQ-8qy"/>
+                            <constraint firstItem="WAO-6k-EgQ" firstAttribute="centerX" secondItem="QVq-RX-Pvu" secondAttribute="centerX" id="hIy-bC-x1V"/>
+                            <constraint firstItem="QVq-RX-Pvu" firstAttribute="bottom" secondItem="WAO-6k-EgQ" secondAttribute="bottom" constant="100" id="iEW-JR-LHq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QVq-RX-Pvu"/>
+                    </view>
+                    <connections>
+                        <outlet property="instructionLabel" destination="ixI-Vq-qzd" id="jcO-xe-uhI"/>
+                        <outlet property="passwordStackView" destination="WAO-6k-EgQ" id="R1p-v5-e7i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4q-7h-eJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4240.579710144928" y="-1308.4821428571429"/>
         </scene>
         <!--Scan  Key-->
         <scene sceneID="uap-fu-bR3">
@@ -249,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVV-ke-5eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4295.652173913044" y="-1623.2142857142856"/>
+            <point key="canvasLocation" x="4106" y="-2146"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
