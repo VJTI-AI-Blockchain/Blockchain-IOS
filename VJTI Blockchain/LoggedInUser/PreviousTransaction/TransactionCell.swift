@@ -19,8 +19,16 @@ class TransactionCell : UITableViewCell {
     
     func setRow(message: String, amount: Int, timestamp: Int, sender: String) {
         messageLabel?.text = message
-        transactionAmtLabel?.text = "\(amount)"
-        timestampLabel?.text = "\(timestamp)";
+        transactionAmtLabel?.text = "\(amount) Coins"
+        
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let date = Date(timeIntervalSince1970: TimeInterval(timestamp + 30 * 60 + 5 * 3600))
+        
+        timestampLabel?.text = "\(date)";
+        
+        
         senderIdenticon?.image = GitHubIdenticon().icon(
             from: sender,
             size: CGSize(width: 100, height: 100)

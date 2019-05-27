@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                <rect key="frame" x="141" y="418" width="132" height="83"/>
+                                <rect key="frame" x="141" y="418" width="132.00000000000006" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="3YV-6N-VqL"/>
                                 </constraints>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
                                     <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>
@@ -461,19 +461,22 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05-03-2019 14:15:46" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFj-9R-CrZ">
-                                            <rect key="frame" x="274" y="63.5" width="120" height="15"/>
+                                            <rect key="frame" x="274" y="57.5" width="120" height="15"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a message for the transaction" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5a-33-PEf">
-                                            <rect key="frame" x="86" y="11" width="266.5" height="19.5"/>
+                                            <rect key="frame" x="86" y="11" width="266.5" height="13.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EG-3i-Dx5">
-                                            <rect key="frame" x="96" y="49" width="38" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EG-3i-Dx5">
+                                            <rect key="frame" x="96" y="43.5" width="37.5" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="NBh-bg-OTB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.035311292655521354" green="0.56368040739611902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -482,14 +485,13 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h5a-33-PEf" secondAttribute="trailing" constant="20" symbolic="YES" id="0sq-W8-Cfy"/>
                                         <constraint firstItem="h5a-33-PEf" firstAttribute="top" secondItem="tDm-dK-sBT" secondAttribute="top" constant="11" id="2de-Fb-bmo"/>
+                                        <constraint firstItem="0EG-3i-Dx5" firstAttribute="top" secondItem="h5a-33-PEf" secondAttribute="bottom" constant="19" id="62j-1w-gee"/>
                                         <constraint firstItem="0EG-3i-Dx5" firstAttribute="leading" secondItem="Lsi-eW-wXZ" secondAttribute="trailing" constant="26" id="D7X-PP-7OF"/>
                                         <constraint firstItem="Lsi-eW-wXZ" firstAttribute="centerY" secondItem="tDm-dK-sBT" secondAttribute="centerY" id="Ds3-Qd-wIG"/>
                                         <constraint firstItem="Lsi-eW-wXZ" firstAttribute="top" secondItem="tDm-dK-sBT" secondAttribute="top" constant="8" id="Fry-ow-Y0A"/>
                                         <constraint firstItem="h5a-33-PEf" firstAttribute="leading" secondItem="Lsi-eW-wXZ" secondAttribute="trailing" constant="16" id="Mdl-Th-BpY"/>
-                                        <constraint firstItem="0EG-3i-Dx5" firstAttribute="top" relation="lessThanOrEqual" secondItem="tDm-dK-sBT" secondAttribute="top" constant="50" id="QYZ-i5-JWY"/>
                                         <constraint firstAttribute="bottom" secondItem="0EG-3i-Dx5" secondAttribute="bottom" constant="15" id="Tjq-AU-MGO"/>
                                         <constraint firstItem="KFj-9R-CrZ" firstAttribute="top" secondItem="h5a-33-PEf" secondAttribute="bottom" constant="33" id="d2j-Pc-woq"/>
-                                        <constraint firstItem="0EG-3i-Dx5" firstAttribute="top" secondItem="h5a-33-PEf" secondAttribute="bottom" constant="19" id="hRa-2q-627"/>
                                         <constraint firstAttribute="trailing" secondItem="KFj-9R-CrZ" secondAttribute="trailing" constant="20" id="j0v-mw-wMm"/>
                                         <constraint firstItem="KFj-9R-CrZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0EG-3i-Dx5" secondAttribute="trailing" constant="8" symbolic="YES" id="sdi-Lo-qOj"/>
                                         <constraint firstItem="KFj-9R-CrZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lsi-eW-wXZ" secondAttribute="trailing" constant="8" symbolic="YES" id="vAd-ZG-qXL"/>
