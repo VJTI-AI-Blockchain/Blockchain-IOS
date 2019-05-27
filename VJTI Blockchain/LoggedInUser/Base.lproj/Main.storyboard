@@ -340,9 +340,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-qG-J4V">
-                                <rect key="frame" x="172.5" y="588" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-qG-J4V">
+                                <rect key="frame" x="171.5" y="589" width="69" height="30"/>
                                 <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="backupProfileAction:" destination="PvK-hp-Nvz" eventType="touchUpInside" id="ci8-4F-xtt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The backup file will be stored in your internal storage" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-YG-Wip">
                                 <rect key="frame" x="37.5" y="633" width="339" height="38.5"/>
@@ -403,6 +406,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="eSc-c6-CDK"/>
                     <connections>
+                        <outlet property="backupPasswordTextView" destination="A5R-Fv-Myo" id="5Vr-ed-WFv"/>
                         <outlet property="emailLabel" destination="ta1-M1-2z7" id="9gS-sl-1Tr"/>
                         <outlet property="profileImageIdenticonView" destination="EXr-h8-s66" id="1zI-q1-tOO"/>
                         <outlet property="publicKeyLabel" destination="RKh-dw-Z0e" id="Uva-n1-tJO"/>

@@ -20,6 +20,7 @@
 		E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA892296B2AD00B1C1EB /* TransactionModel.swift */; };
 		E46A5AA6229B48D100C1DF9B /* ReceiveCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */; };
 		E46A5AA8229B522400C1DF9B /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */; };
+		E46A5AAA229B592100C1DF9B /* BackupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA9229B592100C1DF9B /* BackupUtils.swift */; };
 		E4CB8C9D229AD69700A532CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8C9C229AD69700A532CC /* User.swift */; };
 		E4CB8CDF229B1E0200A532CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */; };
 		E4CB8CE0229B1E0200A532CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4CB8CD3229B1E0200A532CC /* README.md */; };
@@ -79,6 +80,7 @@
 		E445EA892296B2AD00B1C1EB /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveCoinViewController.swift; sourceTree = "<group>"; };
 		E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
+		E46A5AA9229B592100C1DF9B /* BackupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupUtils.swift; sourceTree = "<group>"; };
 		E4CB8C9C229AD69700A532CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
 		E4CB8CD3229B1E0200A532CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				E445EA2822956A6B00B1C1EB /* Info.plist */,
 				E4CB8C9C229AD69700A532CC /* User.swift */,
 				E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */,
+				E46A5AA9229B592100C1DF9B /* BackupUtils.swift */,
 			);
 			path = "VJTI Blockchain";
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46A5AAA229B592100C1DF9B /* BackupUtils.swift in Sources */,
 				E445EA8A2296B2AD00B1C1EB /* TransactionModel.swift in Sources */,
 				E4DC9D392297DF4100CBAB0E /* SignupViewController.swift in Sources */,
 				E4CB8CEE229B258000A532CC /* ProfileViewController.swift in Sources */,

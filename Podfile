@@ -4,5 +4,7 @@ target 'VJTI Blockchain' do
 	pod 'MarqueeLabel'
 	pod 'QRCode'
 	pod 'IGIdenticon'
+	pod 'Alamofire'
+	pod 'CryptoSwift'
 end
 
