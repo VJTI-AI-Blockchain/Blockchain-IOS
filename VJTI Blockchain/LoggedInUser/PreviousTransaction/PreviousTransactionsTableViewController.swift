@@ -8,39 +8,107 @@
 
 import Foundation
 import UIKit
+import Alamofire
+import SwiftyJSON
+import IGIdenticon
 
 class PreviousTransactionsTableViewController : UITableViewController {
     
-    private var dummyData = [
-        TransactionModel(message: "This is message 1", amount: 300, timestamp: "05-03-2019 14:15:46"),
-        TransactionModel(message: "This is a comparatively long message that may take two lines", amount: 75, timestamp: "06-03-2019 22:45:30"),
-        TransactionModel(message: "This is another message", amount: 56, timestamp: "07-03-2019 11:15:46"),
-        TransactionModel(message: "This is a sample message", amount: 40, timestamp: "07-03-2019 04:18:07"),
-        TransactionModel(message: "This is a sample message", amount: 20, timestamp: "09-03-2019 12:05:16"),
-        TransactionModel(message: "This is a sample message", amount: 20, timestamp: "09-03-2019 12:05:16"),
-        TransactionModel(message: "This is a sample message", amount: 20, timestamp: "09-03-2019 12:05:16"),
-
-        ];
+    
+    private var previousTransactions: [TransactionModel] = []
+    //let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        refreshControl = UIRefreshControl()
+        refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh");
+        
+        refreshControl?.addTarget(self, action: #selector(loadPreviousTransactions), for: .valueChanged)
+        
+        self.tableView.addSubview(refreshControl!)
+        
+        loadPreviousTransactions()
         
     }
     
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyData.count;
+        return previousTransactions.count;
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let transactionCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TransactionCell;
+        let transactionCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TransactionCell;
         
-        transactionCell.messageLabel.text = dummyData[indexPath.row].message;
+        let transactionDetails = previousTransactions[indexPath.row]
         
-        transactionCell.transactionAmtLabel.text = "\(dummyData[indexPath.row].amount)";
-        
-        transactionCell.timestampLabel.text = dummyData[indexPath.row].timestamp;
+        transactionCell.setRow(
+            message  : transactionDetails.message,
+            amount   : transactionDetails.amount,
+            timestamp: transactionDetails.timestamp,
+            sender   : transactionDetails.sender
+        );
         
         return transactionCell;
+    }
+    
+    @objc func loadPreviousTransactions() {
+        print("called loadPreviousTransactions")
+        
+        previousTransactions.removeAll()
+        let reqJSON : [String: Any] = ["public_key": try! User().pubKeyStr]
+    
+        
+        Alamofire.request(
+            NetworkUtilities.TRANSACTION_HISTORY,
+            method: .post,
+            parameters: reqJSON,
+            encoding: JSONEncoding.default,
+            headers: ["Content-Type": "application/json"]
+            )
+            .responseJSON { response in
+                guard response.result.isSuccess,
+                    let value = response.result.value else {
+                        print("Error while fetching tags: \(String(describing: response.result.error))")
+                        return
+                }
+
+                //TODO cleanup
+                let jsonData  = JSON(value).rawString()?.data(using: String.Encoding.utf8)
+                var jsonArray = try! JSONSerialization.jsonObject(with: jsonData!, options: .allowFragments) as! [Any
+                ]
+                
+                for i in jsonArray.indices {
+                    
+                    var x = JSON(jsonArray[i] as! String).rawString()?.data(using: String.Encoding.utf8)
+                    let details = try! JSONSerialization.jsonObject(with: x!, options: .allowFragments) as![String: Any]
+                    print(details["amount"] as! Int)
+
+                    self.previousTransactions.append(TransactionModel(
+                        message: details["message"] as! String,
+                        amount: details["amount"] as! Int,
+                        timestamp: details["timestamp"] as! Int,
+                        sender: details["address"] as! String
+                    ))
+                }
+                
+//                for i in 0..<jsonArray.count {
+//
+//                    let details : NSDictionary = jsonArray[i] as! NSDictionary
+//
+//                    self.previousTransactions.append(TransactionModel(
+//                        message: details["message"] as! String,
+//                        amount: details["amount"] as! Int,
+//                        timestamp: details["timestamp"] as! String,
+//                        sender: details["address"] as! String
+//                    ))
+//                }
+
+                print("Previous Transactions:",self.previousTransactions.count)
+
+                self.refreshControl?.endRefreshing()
+                self.tableView.reloadData()
+        
+        }
     }
 }
