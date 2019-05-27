@@ -21,6 +21,7 @@
 		E46A5AA6229B48D100C1DF9B /* ReceiveCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */; };
 		E46A5AA8229B522400C1DF9B /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */; };
 		E46A5AAA229B592100C1DF9B /* BackupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AA9229B592100C1DF9B /* BackupUtils.swift */; };
+		E46A5AAD229C0A0700C1DF9B /* PublicKeyScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A5AAC229C0A0700C1DF9B /* PublicKeyScannerViewController.swift */; };
 		E4CB8C9D229AD69700A532CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8C9C229AD69700A532CC /* User.swift */; };
 		E4CB8CDF229B1E0200A532CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */; };
 		E4CB8CE0229B1E0200A532CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4CB8CD3229B1E0200A532CC /* README.md */; };
@@ -81,6 +82,7 @@
 		E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveCoinViewController.swift; sourceTree = "<group>"; };
 		E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
 		E46A5AA9229B592100C1DF9B /* BackupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupUtils.swift; sourceTree = "<group>"; };
+		E46A5AAC229C0A0700C1DF9B /* PublicKeyScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyScannerViewController.swift; sourceTree = "<group>"; };
 		E4CB8C9C229AD69700A532CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E4CB8CD2229B1E0200A532CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
 		E4CB8CD3229B1E0200A532CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -216,9 +218,18 @@
 		E46A5AA4229B48A400C1DF9B /* CoinTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				E46A5AAB229C09E600C1DF9B /* SendCoins */,
 				E46A5AA5229B48D100C1DF9B /* ReceiveCoinViewController.swift */,
 			);
 			path = CoinTransaction;
+			sourceTree = "<group>";
+		};
+		E46A5AAB229C09E600C1DF9B /* SendCoins */ = {
+			isa = PBXGroup;
+			children = (
+				E46A5AAC229C0A0700C1DF9B /* PublicKeyScannerViewController.swift */,
+			);
+			path = SendCoins;
 			sourceTree = "<group>";
 		};
 		E4CB8CD1229B1E0200A532CC /* CryptorECC */ = {
@@ -471,6 +482,7 @@
 				E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */,
 				E4CB8CE2229B1E0200A532CC /* ECSignable.swift in Sources */,
 				E46A5AA8229B522400C1DF9B /* NetworkUtilities.swift in Sources */,
+				E46A5AAD229C0A0700C1DF9B /* PublicKeyScannerViewController.swift in Sources */,
 				E4CB8CE4229B1E0200A532CC /* ECError.swift in Sources */,
 				E46A5AA6229B48D100C1DF9B /* ReceiveCoinViewController.swift in Sources */,
 				E4CB8CE8229B1E0200A532CC /* Data+Extensions.swift in Sources */,

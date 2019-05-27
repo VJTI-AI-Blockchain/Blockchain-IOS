@@ -7,5 +7,6 @@ target 'VJTI Blockchain' do
 	pod 'Alamofire'
 	pod 'CryptoSwift'
 	pod 'SwiftyJSON', '~> 4.0'
+	pod 'QRCodeReader.swift', '~> 10.1.0'
 end
 

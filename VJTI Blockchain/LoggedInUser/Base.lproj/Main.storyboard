@@ -13,7 +13,7 @@
         <!--HomeViewController-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" userLabel="HomeViewController" customClass="HomeViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="9pv-A4-QxB" userLabel="HomeViewController" customClass="HomeViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="2219" y="-942"/>
         </scene>
-        <!--Receive Coin View Controller-->
+        <!--Receive Coins-->
         <scene sceneID="PgG-5Y-b5v">
             <objects>
-                <viewController id="6hz-AD-LJz" customClass="ReceiveCoinViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Receive Coins" id="6hz-AD-LJz" customClass="ReceiveCoinViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="43Q-OE-w1j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="3231.884057971015" y="-532.36607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Send Coins-->
         <scene sceneID="mk5-GL-Xmf">
             <objects>
-                <viewController id="8kf-lr-Bk8" sceneMemberID="viewController">
+                <viewController title="Send Coins" id="8kf-lr-Bk8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IS3-3V-gJP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,6 +213,9 @@
                                 <rect key="frame" x="190" y="268" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-camera"/>
+                                <connections>
+                                    <segue destination="eqE-Gw-a7B" kind="show" id="vi4-6p-E2Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -222,6 +225,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGg-Jc-AO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3231.884057971015" y="-1315.1785714285713"/>
+        </scene>
+        <!--Scan  Key-->
+        <scene sceneID="uap-fu-bR3">
+            <objects>
+                <viewController title="Scan  Key" id="eqE-Gw-a7B" customClass="PublicKeyScannerViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xe2-Jc-Ghn" customClass="QRCodeReaderView" customModule="QRCodeReader">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-XY-Wyy" customClass="QRCodeReaderView" customModule="QRCodeReader">
+                                <rect key="frame" x="64" y="133" width="287" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dco-Fj-yO2"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="6Of-XY-Wyy" id="Cwb-Dx-fF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVV-ke-5eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4295.652173913044" y="-1623.2142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -437,10 +465,10 @@
             </objects>
             <point key="canvasLocation" x="1351" y="-941"/>
         </scene>
-        <!--Transactions-->
+        <!--Past Transactions-->
         <scene sceneID="m7B-Ge-CMY">
             <objects>
-                <tableViewController id="qao-Nw-CDo" customClass="PreviousTransactionsTableViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Past Transactions" id="qao-Nw-CDo" customClass="PreviousTransactionsTableViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uC6-PW-fCH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
