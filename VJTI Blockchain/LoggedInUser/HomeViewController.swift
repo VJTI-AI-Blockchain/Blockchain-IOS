@@ -7,14 +7,40 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var coinCountLabel: UILabel!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadCoinBalance()
     }
 
+    func loadCoinBalance() {
+        let reqJSON : [String: Any] = ["public_key": try! User().pubKeyStr]
+        
+        
+        Alamofire.request(
+            NetworkUtilities.CHECK_BALANCE_URL,
+            method: .post,
+            parameters: reqJSON,
+            encoding: JSONEncoding.default,
+            headers: ["Content-Type": "application/json"]
+        )
+            .responseString { response in
+                switch response.result {
+                    case .success(_):
+                        if let count = response.result.value{
+                            self.coinCountLabel.text = "\(count) Coins"
+                    }
+                case .failure(_):
+                        self.coinCountLabel.text = "Unable to retrieve balance"
 
+                
+            }
+        }
+    }
 }
 

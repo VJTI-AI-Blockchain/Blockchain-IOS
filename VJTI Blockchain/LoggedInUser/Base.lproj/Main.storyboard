@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                <rect key="frame" x="141" y="418" width="132" height="83"/>
+                                <rect key="frame" x="141" y="418" width="132.00000000000006" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="3YV-6N-VqL"/>
                                 </constraints>
@@ -30,10 +30,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOd-P4-6h4">
-                                <rect key="frame" x="186" y="569" width="40" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOd-P4-6h4">
+                                <rect key="frame" x="162" y="569" width="90.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDU-Lg-DNg">
@@ -62,10 +62,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="FOd-P4-6h4" secondAttribute="trailing" constant="188" id="6ed-3u-D1s"/>
                             <constraint firstItem="GBg-gK-wc4" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="9bf-0q-uTD"/>
                             <constraint firstItem="fnO-sS-ufR" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="141" id="ADp-MM-OQe"/>
-                            <constraint firstItem="FOd-P4-6h4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="186" id="DKS-G7-NOo"/>
                             <constraint firstItem="Ni5-jg-L46" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="35" id="INh-47-CyX"/>
                             <constraint firstItem="FOd-P4-6h4" firstAttribute="top" secondItem="GBg-gK-wc4" secondAttribute="bottom" constant="15" id="MSF-rR-vwk"/>
                             <constraint firstItem="GBg-gK-wc4" firstAttribute="top" secondItem="fnO-sS-ufR" secondAttribute="bottom" constant="24" id="Zx3-89-DyK"/>
@@ -75,6 +73,7 @@
                             <constraint firstItem="zkJ-Ad-46U" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="80" id="c0Z-gl-4M1"/>
                             <constraint firstItem="fnO-sS-ufR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="418" id="c3F-i6-vWW"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="zkJ-Ad-46U" secondAttribute="bottom" constant="40" id="iba-Wh-WMd"/>
+                            <constraint firstItem="FOd-P4-6h4" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="iqb-aq-Xwl"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="cDU-Lg-DNg" secondAttribute="bottom" constant="40" id="oRH-Yo-5gM"/>
                             <constraint firstItem="cDU-Lg-DNg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zkJ-Ad-46U" secondAttribute="trailing" constant="8" symbolic="YES" id="pUQ-QS-9Pd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="cDU-Lg-DNg" secondAttribute="trailing" constant="80" id="ryX-IP-hJe"/>
@@ -83,6 +82,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" id="mHR-AQ-JDS"/>
+                    <connections>
+                        <outlet property="coinCountLabel" destination="FOd-P4-6h4" id="3K6-UT-r5k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
                                     <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>
@@ -243,7 +245,6 @@
         <!--ProfileViewController-->
         <scene sceneID="pdB-h5-IEe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="89m-qt-9JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="ProfileViewController" id="PvK-hp-Nvz" customClass="ProfileViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iWt-ea-8bn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -295,7 +296,7 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMSDJVJE13MW3781235FCMGNJANMF23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKh-dw-Z0e" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKh-dw-Z0e" customClass="MarqueeLabel" customModule="MarqueeLabel">
                                 <rect key="frame" x="42" y="314" width="319" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="319" id="XBp-ud-w2s"/>
@@ -322,8 +323,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a secret phrase. Use this to restore your profile" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-JB-eXQ">
-                                <rect key="frame" x="58.5" y="503.5" width="297" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a secret phrase. Use this to restore your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-JB-eXQ">
+                                <rect key="frame" x="-10.5" y="503.5" width="435" height="38.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="339" id="Nyg-d3-5aW"/>
                                 </constraints>
@@ -347,8 +348,8 @@
                                     <action selector="backupProfileAction:" destination="PvK-hp-Nvz" eventType="touchUpInside" id="ci8-4F-xtt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The backup file will be stored in your internal storage" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-YG-Wip">
-                                <rect key="frame" x="37.5" y="633" width="339" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The backup file will be stored in your internal storage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-YG-Wip">
+                                <rect key="frame" x="15.5" y="633" width="384" height="38.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="339" id="dZo-18-dTD"/>
                                 </constraints>
@@ -413,6 +414,7 @@
                         <outlet property="userNameLabel" destination="vqJ-5n-mw2" id="Jzx-W3-O71"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89m-qt-9JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="1382.8125"/>
         </scene>

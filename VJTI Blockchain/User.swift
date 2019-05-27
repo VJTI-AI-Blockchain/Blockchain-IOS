@@ -16,15 +16,17 @@ class User {
     var pvtKey: ECPrivateKey
     
     var pubKeyStr: String {
-        let s = pubKey.pemString.replacingOccurrences(of: "-----BEGIN PUBLIC KEY-----\n", with: "");
-
-        return s.replacingOccurrences(of: "\n-----END PUBLIC KEY-----", with: "")
+        return pubKey.pemString
+            .replacingOccurrences(of: "-----BEGIN PUBLIC KEY-----\n", with: "")
+            .replacingOccurrences(of: "\n-----END PUBLIC KEY-----", with: "")
+            .replacingOccurrences(of: "\n", with: "")
     }
     
     var pvtKeyStr: String {
-        let s = pvtKey.pemString.replacingOccurrences(of: "-----BEGIN EC PRIVATE KEY-----\n", with: "")
-        
-        return s.replacingOccurrences(of: "\n-----END EC PRIVATE KEY-----", with: "")
+        return pvtKey.pemString
+            .replacingOccurrences(of: "-----BEGIN EC PRIVATE KEY-----\n", with: "")
+            .replacingOccurrences(of: "\n-----END EC PRIVATE KEY-----", with: "")
+            .replacingOccurrences(of: "\n", with: "")
     }
     
     // userPin is made to be retrieved from keychain every time it's requested
