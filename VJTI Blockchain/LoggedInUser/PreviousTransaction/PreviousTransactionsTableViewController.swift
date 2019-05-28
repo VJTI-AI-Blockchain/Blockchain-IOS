@@ -21,7 +21,6 @@ class PreviousTransactionsTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         refreshControl = UIRefreshControl()
-        refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh");
         
         refreshControl?.addTarget(self, action: #selector(loadPreviousTransactions), for: .valueChanged)
         
