@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D8614831C279D8AFE2EEB3D /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */; };
+		E40884C2229D325300618ACF /* uiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C1229D325300618ACF /* uiUtils.swift */; };
 		E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1A22956A6900B1C1EB /* AppDelegate.swift */; };
 		E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* HomeViewController.swift */; };
 		E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2022956A6900B1C1EB /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6CA4395E3058E956EDEED2 /* Pods-VJTI Blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.debug.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBBF79F766AE26B16AA694E /* Pods-VJTI Blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.release.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.release.xcconfig"; sourceTree = "<group>"; };
+		E40884C1229D325300618ACF /* uiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiUtils.swift; sourceTree = "<group>"; };
 		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E445EA1C22956A6900B1C1EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				E4CB8C9C229AD69700A532CC /* User.swift */,
 				E46A5AA7229B522400C1DF9B /* NetworkUtilities.swift */,
 				E46A5AA9229B592100C1DF9B /* BackupUtils.swift */,
+				E40884C1229D325300618ACF /* uiUtils.swift */,
 			);
 			path = "VJTI Blockchain";
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */,
 				E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */,
 				E4CB8CDF229B1E0200A532CC /* EllipticCurve.swift in Sources */,
+				E40884C2229D325300618ACF /* uiUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

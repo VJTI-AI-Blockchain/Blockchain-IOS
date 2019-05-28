@@ -28,13 +28,25 @@ class TransactionDetailsViewController:UIViewController {
     }
 
     @IBAction func onSubmit(_ sender: Any) {
-        if receiverPubKey.count <= 0 {
+        if receiverPubKey.count < 90 {
+            uiUtils.showAlertBox(
+                title: "Invalid Public Key",
+                message: "Please provide a proper public key for the sender or use the QR Code",
+                sender: self)
             return
         }
         if totalCoins <= 0 {
+            uiUtils.showAlertBox(
+                title: "Invalid Coin Amount",
+                message: "Please use a positive integer of cins for the transaction",
+                sender: self)
             return
         }
         if messageStr.count <= 0 {
+            uiUtils.showAlertBox(
+                title: "Empty Message",
+                message: "Please write in a message for the transaction",
+                sender: self)
             return
         }
         
