@@ -29,14 +29,18 @@ class VerifyPinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        print("fuck")
         passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigits)
-        print("you")
         passwordContainerView.delegate = self;
         
         passwordContainerView.deleteButton.setImage(UIImage(imageLiteralResourceName: "delete-icon"), for: UIControl.State.normal);
         
         passwordContainerView.deleteButton.setTitle("", for: UIControl.State.normal)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        VerifyPinViewController.tries = 0
+        print(receiverPubKey, totalCoins, transactionMessage)
     }
     
     
@@ -64,7 +68,7 @@ extension VerifyPinViewController: PasswordInputCompleteProtocol {
 private extension VerifyPinViewController {
     func validation(_ input: String) -> Bool {
         VerifyPinViewController.tries += 1
-        return input == User.getPin()
+        return VerifyPinViewController.tries <= 3 && input == User.getPin()
     }
     
     func validationSuccess() {
@@ -78,9 +82,9 @@ private extension VerifyPinViewController {
     }
     
     func validationFail() {
-        if VerifyPinViewController.tries <= 3 {
+        if VerifyPinViewController.tries < 3 {
             print("*️⃣ failure!")
-            instructionLabel.text = "Invalid Pin"
+            instructionLabel.text = "Invalid Pin. (Tries left: \(3 - VerifyPinViewController.tries))"
             passwordContainerView.wrongPassword()
         }
         else {
