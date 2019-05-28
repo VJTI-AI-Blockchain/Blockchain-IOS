@@ -38,7 +38,7 @@ class TransactionDetailsViewController:UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "messageStr", sender: sender)
+        performSegue(withIdentifier: "verifyTransactionSeguey", sender: sender)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

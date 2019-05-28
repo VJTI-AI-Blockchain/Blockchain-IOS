@@ -16,22 +16,23 @@ class VerifyPinViewController: UIViewController {
     var totalCoins : Int?
     var transactionMessage: String?
     
-    @IBOutlet private weak var passwordStackView: UIStackView!
+    @IBOutlet weak var passwordStackView: UIStackView!
     
-    private var passwordContainerView: PasswordContainerView!
+    var passwordContainerView: PasswordContainerView!
     
-    private let kPasswordDigits = 4
+    let kPasswordDigits = 4
     fileprivate static var tries = 0
     
-    @IBOutlet private weak var instructionLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        
+        print("fuck")
         passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigits)
-        //passwordContainerView.delegate = self;
+        print("you")
+        passwordContainerView.delegate = self;
         
         passwordContainerView.deleteButton.setImage(UIImage(imageLiteralResourceName: "delete-icon"), for: UIControl.State.normal);
         
@@ -41,7 +42,26 @@ class VerifyPinViewController: UIViewController {
     
 }
 
-private extension SecretPinSetupViewController {
+extension VerifyPinViewController: PasswordInputCompleteProtocol {
+    func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String) {
+        if validation(input) {
+            validationSuccess()
+        } else {
+            validationFail()
+        }
+    }
+    
+    func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: Error?) {
+        if success {
+            self.validationSuccess()
+        } else {
+            passwordContainerView.clearInput()
+        }
+    }
+}
+
+
+private extension VerifyPinViewController {
     func validation(_ input: String) -> Bool {
         VerifyPinViewController.tries += 1
         return input == User.getPin()
@@ -60,12 +80,12 @@ private extension SecretPinSetupViewController {
     func validationFail() {
         if VerifyPinViewController.tries <= 3 {
             print("*️⃣ failure!")
-            pinInstructionLabel.text = "Invalid Pin"
+            instructionLabel.text = "Invalid Pin"
             passwordContainerView.wrongPassword()
         }
         else {
             print("*️⃣ utter failure!")
-            pinInstructionLabel.text = "You are out of tries"
+            instructionLabel.text = "You are out of tries"
             passwordContainerView.wrongPassword()
 
         }
