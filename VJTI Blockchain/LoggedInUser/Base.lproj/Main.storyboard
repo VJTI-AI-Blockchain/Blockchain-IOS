@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                <rect key="frame" x="141" y="418" width="132.00000000000006" height="83"/>
+                                <rect key="frame" x="141" y="418" width="132" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="3YV-6N-VqL"/>
                                 </constraints>
@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
+                                <rect key="frame" x="87" y="188" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
                                     <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>

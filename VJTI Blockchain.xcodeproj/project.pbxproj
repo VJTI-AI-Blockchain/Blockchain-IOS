@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55A8CBA18A6D23DA1418FFDA /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB59D309C101CCEA95D527EB /* libPods-VJTI Blockchain.a */; };
+		6D8614831C279D8AFE2EEB3D /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */; };
 		E40884C2229D325300618ACF /* uiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C1229D325300618ACF /* uiUtils.swift */; };
 		E40884C4229D374C00618ACF /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C3229D374C00618ACF /* TransactionDetails.swift */; };
-		E40884C9229D733100618ACF /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C7229D733000618ACF /* EllipticCurveKeyPair.swift */; };
-		E40884CA229D733100618ACF /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C8229D733000618ACF /* SHA256.swift */; };
 		E445EA1B22956A6900B1C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1A22956A6900B1C1EB /* AppDelegate.swift */; };
 		E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445EA1C22956A6900B1C1EB /* HomeViewController.swift */; };
 		E445EA2222956A6900B1C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E445EA2022956A6900B1C1EB /* Main.storyboard */; };
@@ -66,13 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6CA4395E3058E956EDEED2 /* Pods-VJTI Blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.debug.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBBF79F766AE26B16AA694E /* Pods-VJTI Blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.release.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.release.xcconfig"; sourceTree = "<group>"; };
-		BB59D309C101CCEA95D527EB /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40884C1229D325300618ACF /* uiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiUtils.swift; sourceTree = "<group>"; };
 		E40884C3229D374C00618ACF /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
-		E40884C7229D733000618ACF /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
-		E40884C8229D733000618ACF /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E445EA1C22956A6900B1C1EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A8CBA18A6D23DA1418FFDA /* libPods-VJTI Blockchain.a in Frameworks */,
+				6D8614831C279D8AFE2EEB3D /* libPods-VJTI Blockchain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +150,7 @@
 		9ABEF907CEE527DDC1031CB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BB59D309C101CCEA95D527EB /* libPods-VJTI Blockchain.a */,
+				182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,8 +180,6 @@
 		E445EA1922956A6900B1C1EB /* VJTI Blockchain */ = {
 			isa = PBXGroup;
 			children = (
-				E40884C7229D733000618ACF /* EllipticCurveKeyPair.swift */,
-				E40884C8229D733000618ACF /* SHA256.swift */,
 				E4CB8CD1229B1E0200A532CC /* CryptorECC */,
 				E4F3BB542298F8C90050E772 /* VJTI Blockchain.entitlements */,
 				E4DC9D352297CBDE00CBAB0E /* LoggedInUser */,
@@ -311,7 +305,7 @@
 				E445EA1322956A6900B1C1EB /* Sources */,
 				E445EA1422956A6900B1C1EB /* Frameworks */,
 				E445EA1522956A6900B1C1EB /* Resources */,
-				CF7C0EA1F83214B5E1BC841D /* [CP] Copy Pods Resources */,
+				E5302A91892236718E825A2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,7 +453,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF7C0EA1F83214B5E1BC841D /* [CP] Copy Pods Resources */ = {
+		E5302A91892236718E825A2F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,7 +485,6 @@
 				E46A5AAF229C0FA100C1DF9B /* TransactionDetailsViewController.swift in Sources */,
 				E4F3BB512298010B0050E772 /* SecretPinSetupViewController.swift in Sources */,
 				E4CB8CEA229B1E0200A532CC /* ECSignature.swift in Sources */,
-				E40884C9229D733100618ACF /* EllipticCurveKeyPair.swift in Sources */,
 				E4CB8CE7229B1E0200A532CC /* ECDecryptable.swift in Sources */,
 				E4CB8CE9229B1E0200A532CC /* ASN1.swift in Sources */,
 				E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */,
@@ -509,7 +502,6 @@
 				E4CB8CE8229B1E0200A532CC /* Data+Extensions.swift in Sources */,
 				E445EA882296B04C00B1C1EB /* TransactionCell.swift in Sources */,
 				E445EA1D22956A6900B1C1EB /* HomeViewController.swift in Sources */,
-				E40884CA229D733100618ACF /* SHA256.swift in Sources */,
 				E4CB8CDF229B1E0200A532CC /* EllipticCurve.swift in Sources */,
 				E40884C2229D325300618ACF /* uiUtils.swift in Sources */,
 				E40884C4229D374C00618ACF /* TransactionDetails.swift in Sources */,
