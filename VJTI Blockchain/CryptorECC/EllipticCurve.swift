@@ -59,7 +59,8 @@ public struct EllipticCurve: Equatable, CustomStringConvertible {
     let hashLength = CC_LONG(SHA256_DIGEST_LENGTH)
     #else
     let signingAlgorithm: SecKeyAlgorithm
-    let encryptionAlgorithm = SecKeyAlgorithm.eciesEncryptionStandardVariableIVX963SHA256AESGCM
+    //let encryptionAlgorithm = SecKeyAlgorithm.eciesEncryptionStandardVariableIVX963SHA256AESGCM
+    let encryptionAlgorithm = SecKeyAlgorithm.ecdsaSignatureDigestX962SHA256
     let hashEngine: (_ data: UnsafeRawPointer?, _ len: CC_LONG, _ md: UnsafeMutablePointer<UInt8>?) -> UnsafeMutablePointer<UInt8>?
     let hashLength: CC_LONG
     #endif

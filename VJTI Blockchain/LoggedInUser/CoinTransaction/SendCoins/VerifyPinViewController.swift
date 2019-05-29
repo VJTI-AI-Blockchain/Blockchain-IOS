@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 import SmileLock
+import Alamofire
+import CryptoSwift
+import Security
+import BigInt
+
 
 class VerifyPinViewController: UIViewController {
     
-    var receiverPubKey: String?
-    var totalCoins : Int?
-    var transactionMessage: String?
+    var transactionObj: TransactionDetails?
     
     @IBOutlet weak var passwordStackView: UIStackView!
     
@@ -73,9 +76,12 @@ private extension VerifyPinViewController {
     func validationSuccess() {
         
         print("*️⃣ successful 1st pin entry")
-        passwordContainerView.clearInput()
+        instructionLabel.text = "Pin Verified!"
+
+        //passwordContainerView.clearInput()
         
         //TODO complete transaction
+        makeTransaction()
     
         
     }
@@ -90,6 +96,79 @@ private extension VerifyPinViewController {
             print("*️⃣ utter failure!")
             instructionLabel.text = "You are out of tries"
             passwordContainerView.wrongPassword()
+
+        }
+    }
+    
+    func makeTransaction() {
+        Alamofire.request(
+            NetworkUtilities.MAKE_TRANSACTION_URL,
+            method: .post,
+            parameters: self.transactionObj?.getJSONObj(),
+            encoding: JSONEncoding.default,
+            headers: ["Content-Type": "application/json"]
+            ).responseJSON{
+               (response) in
+                
+                guard response.result.isSuccess,
+                let receivedJSON = response.result.value as? [String: Any]
+                    else {
+                    print("Error in transaction \(response.result), \(response.response)")
+                    uiUtils.showAlertBox(title: "Transaction Failed", message: response.result.description as! String, sender: self)
+                    return
+                }
+                
+                //print("ONE\n\n",receivedJSON["send_this"], "PUNCH!!!!!!!!",receivedJSON["sign_this"])
+                
+                self.sendTransaction(
+                    send_this: receivedJSON["send_this"] as! String,
+                    sign_this: receivedJSON["sign_this"] as! String
+                )
+        }
+        
+        
+    }
+    
+    func sendTransaction(send_this sendThis: String, sign_this signThis: String) {
+        //print("user,", try! User().pvtKey)
+        let a = try! "VJTI".sign(with: User().pvtKey)
+        
+        print(String(BigUInt(a.r)),String(BigUInt(a.s)))
+
+        let signed = try! signThis.sign(with: User().pvtKey)
+        
+        print([String(BigUInt(signed.r)), String(BigUInt(signed.s))])
+
+
+        Alamofire.request(
+            NetworkUtilities.SEND_TRANSACTION_URL,
+            method: .post,
+            parameters: [
+                "transaction": sendThis,
+                "signature": "[\(String(BigUInt(signed.r))), \(String(BigUInt(signed.s)))]"
+            ],
+            encoding: JSONEncoding.default,
+            headers: ["Content-Type": "application/json"]
+            ).responseString {
+                (response) in
+                
+                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                    print("Data: \(utf8Text)")
+                    print(utf8Text)
+                    print(response.response)
+                    uiUtils.showAlertBox(
+                        title: (response.response?.statusCode ?? 400) == 200 ? "Transaction Succeeded" : "Transaction Failed",
+                        message: utf8Text,
+                        sender: self
+                    )
+                    return
+                }
+                
+                uiUtils.showAlertBox(
+                    title: "Transaction Failed",
+                    message: "Invalid Response from the server",
+                    sender: self
+                )
 
         }
     }

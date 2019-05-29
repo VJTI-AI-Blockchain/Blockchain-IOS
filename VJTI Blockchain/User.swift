@@ -24,8 +24,8 @@ class User {
     
     var pvtKeyStr: String {
         return pvtKey.pemString
-            .replacingOccurrences(of: "-----BEGIN EC PRIVATE KEY-----\n", with: "")
-            .replacingOccurrences(of: "\n-----END EC PRIVATE KEY-----", with: "")
+            .replacingOccurrences(of: "-----BEGIN PRIVATE KEY-----\n", with: "")
+            .replacingOccurrences(of: "\n-----END PRIVATE KEY-----", with: "")
             .replacingOccurrences(of: "\n", with: "")
     }
     

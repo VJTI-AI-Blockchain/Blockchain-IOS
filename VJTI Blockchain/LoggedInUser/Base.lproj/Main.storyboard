@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                <rect key="frame" x="141" y="418" width="132" height="83"/>
+                                <rect key="frame" x="141" y="418" width="132.00000000000006" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="3YV-6N-VqL"/>
                                 </constraints>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOd-P4-6h4">
-                                <rect key="frame" x="162" y="569" width="90.5" height="25.5"/>
+                                <rect key="frame" x="162" y="569" width="90" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
                                     <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>
@@ -116,7 +116,7 @@
                                 <rect key="frame" x="60" y="495" width="295" height="266"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-fg-9R8">
-                                <rect key="frame" x="152" y="436.5" width="110.5" height="29"/>
+                                <rect key="frame" x="152" y="436.5" width="110" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +132,7 @@
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="top" secondItem="YG0-zl-Jgq" secondAttribute="bottom" constant="56" id="Fyd-B6-kI5"/>
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="centerY" secondItem="ont-Yx-rjP" secondAttribute="centerY" constant="-46.5" id="Nbe-X6-mS6"/>
                             <constraint firstItem="eS3-KG-wBO" firstAttribute="leading" secondItem="ont-Yx-rjP" secondAttribute="leading" constant="70" id="elB-GI-kQk"/>
-                            <constraint firstItem="bD0-fg-9R8" firstAttribute="firstBaseline" secondItem="eS3-KG-wBO" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="eqt-um-VKu"/>
+                            <constraint firstItem="bD0-fg-9R8" firstAttribute="firstBaseline" secondItem="eS3-KG-wBO" secondAttribute="baseline" constant="28" symbolType="layoutAnchor" id="eqt-um-VKu"/>
                             <constraint firstItem="Vpy-6m-6ff" firstAttribute="top" secondItem="eS3-KG-wBO" secondAttribute="bottom" constant="59" id="f0X-NR-jKO"/>
                             <constraint firstItem="YG0-zl-Jgq" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="or5-A8-DFZ"/>
                         </constraints>

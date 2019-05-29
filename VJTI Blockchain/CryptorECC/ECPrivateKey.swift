@@ -32,11 +32,11 @@ import OpenSSL
  ### Usage Example: 
  ```swift
  let pemKey = """
- -----BEGIN EC PRIVATE KEY-----
+ -----BEGIN PRIVATE KEY-----
  MHcCAQEEIJX+87WJ7Gh19sohyZnhxZeXYNOcuGv4Q+8MLge4UkaZoAoGCCqGSM49
  AwEHoUQDQgAEikc5m6C2xtDWeeAeT18WElO37zvFOz8p4kAlhvgIHN23XIClNESg
  KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
- -----END EC PRIVATE KEY-----
+ -----END PRIVATE KEY-----
  """
  let privateKey = try ECPrivateKey(key: pemKey)
  let signature = "Hello world".sign(with: privateKey)
@@ -71,11 +71,11 @@ public class ECPrivateKey {
      ### Usage Example: ###
      ```swift
      let privateKeyString = """
-     -----BEGIN EC PRIVATE KEY-----
+     -----BEGIN PRIVATE KEY-----
      MHcCAQEEIJX+87WJ7Gh19sohyZnhxZeXYNOcuGv4Q+8MLge4UkaZoAoGCCqGSM49
      AwEHoUQDQgAEikc5m6C2xtDWeeAeT18WElO37zvFOz8p4kAlhvgIHN23XIClNESg
      KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
-     -----END EC PRIVATE KEY-----
+     -----END PRIVATE KEY-----
      """
      let key = try ECPrivateKey(key: privateKeyString)
      ```

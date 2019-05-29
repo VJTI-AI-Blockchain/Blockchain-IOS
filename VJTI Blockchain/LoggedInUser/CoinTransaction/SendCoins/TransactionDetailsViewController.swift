@@ -58,10 +58,12 @@ class TransactionDetailsViewController:UIViewController {
         switch segue.identifier {
         case "verifyTransactionSeguey":
             let receiverVC = segue.destination as! VerifyPinViewController
+            receiverVC.transactionObj = TransactionDetails(
+                                            coins    : totalCoins,
+                                            receiver : receiverPubKey,
+                                            message  : messageStr
+                                        )
             
-            receiverVC.receiverPubKey = receiverPubKey
-            receiverVC.totalCoins = totalCoins
-            receiverVC.transactionMessage = messageStr
             break
         case .none  : break
             //TODO
