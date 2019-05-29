@@ -1,0 +1,6 @@
+module SmileLock {
+  umbrella header "SmileLock-umbrella.h"
+
+  export *
+  module * { export * }
+}

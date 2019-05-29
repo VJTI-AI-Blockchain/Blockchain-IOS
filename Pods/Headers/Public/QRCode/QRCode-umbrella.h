@@ -1,0 +1,1 @@
+../../../Target Support Files/QRCode/QRCode-umbrella.h
