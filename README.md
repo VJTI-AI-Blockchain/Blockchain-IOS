@@ -1,6 +1,6 @@
 # Blockchain-iOS
 
-The official IOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJTI-AI-Blockchain/VJTI-Blockchain-Wallet).
+The official iOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJTI-AI-Blockchain/VJTI-Blockchain-Wallet).
 
 ## Development Software:
 - XCode : >=10 (my version: 10.2.1)
