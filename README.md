@@ -37,4 +37,4 @@ The official IOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJ
 
 
 ##### Developer
-> Ameya Daddikar
+> Ameya Daddikar: ameyadaddikar@gmail.com
