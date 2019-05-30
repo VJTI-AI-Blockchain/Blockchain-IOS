@@ -4,7 +4,7 @@ The official IOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJ
 
 ## Development Software:
 - XCode : >=10 (my version: 10.2.1)
-- IOS   : >=12
+- iOS   : >=12
 - Current Supported Device (tested on emulator): iPhone XR
 
 
