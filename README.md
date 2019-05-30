@@ -34,3 +34,7 @@ The official IOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJ
    ```
 
 #### NOTE: The Pods/ directory is already provided in the repository so you need not follow instructions 4 & 5 unless you want to add/remove dependencies.
+
+
+##### Developer
+> Ameya Daddikar
