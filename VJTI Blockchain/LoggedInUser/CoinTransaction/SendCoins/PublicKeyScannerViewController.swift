@@ -14,12 +14,15 @@ import AVFoundation
 import UIKit
 
 class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+    
+    var scannedPubKey : String?
+    
     @IBOutlet weak var previewView: QRCodeReaderView! {
         didSet {
             previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
                 $0.reader                 = reader
-                $0.showTorchButton        = false
-                $0.showSwitchCameraButton = false
+                $0.showTorchButton        = true
+                $0.showSwitchCameraButton = true
                 $0.showCancelButton       = false
                 $0.showOverlayView        = true
                 $0.rectOfInterest         = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
@@ -55,7 +58,8 @@ class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControll
                 alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { (_) in
                     DispatchQueue.main.async {
                         if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                            UIApplication.shared.openURL(settingsURL)
+                            UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+                            //UIApplication.shared.openURL(settingsURL)
                         }
                     }
                 }))
@@ -81,21 +85,41 @@ class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControll
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
             if let result = result {
                 print("Completion with result: \(result.value) of type \(result.metadataType)")
+                
+                self.scannedPubKey = result.value;
+                
+                self.performSegue(withIdentifier: "publicKeyScanned", sender: sender);
             }
         }
         
         present(readerVC, animated: true, completion: nil)
     }
     
-    @IBAction func scanInPreviewAction(_ sender: Any) {
-        guard checkScanPermissions(), !reader.isRunning else { return }
-        
-        reader.didFindCode = { result in
-            print("Completion with result: \(result.value) of type \(result.metadataType)")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+            case "publicKeyScanned":
+                let receiverVC = segue.destination as! TransactionDetailsViewController;
+                
+                receiverVC.scannedPubKey = scannedPubKey;
+                
+                break;
+        case .none:
+            break;
+        case .some(_):
+            break;
         }
-        
-        reader.startScanning()
     }
+    
+//    @IBAction func scanInPreviewAction(_ sender: Any) {
+//        guard checkScanPermissions(), !reader.isRunning else { return }
+//
+//        reader.didFindCode = { result in
+//            print("Completion with result: \(result.value) of type \(result.metadataType)")
+//        }
+//
+//        reader.startScanning()
+//    }
+
     
     // MARK: - QRCodeReader Delegate Methods
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {

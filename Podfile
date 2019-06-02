@@ -9,5 +9,6 @@ target 'VJTI Blockchain' do
 	pod 'SwiftyJSON', '~> 4.0'
 	pod 'QRCodeReader.swift', '~> 10.1.0'
 	pod 'BigInt', '~> 4.0'
+	pod 'FileBrowser', '~> 1.0'
 end
 

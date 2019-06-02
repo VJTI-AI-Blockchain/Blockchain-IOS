@@ -97,10 +97,28 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/documents@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/file@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/FileBrowser.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/folder@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/image@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/pdf@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/PreviewTransitionViewController.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/WebviewPreviewViewContoller.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/zip@2x.png"
   install_resource "${PODS_ROOT}/SmileLock/SmileLock/Assets/PasswordContainerView.xib"
   install_resource "${PODS_ROOT}/SmileLock/SmileLock/Assets/Assets.xcassets"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/documents@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/file@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/FileBrowser.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/folder@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/image@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/pdf@2x.png"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/PreviewTransitionViewController.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/WebviewPreviewViewContoller.xib"
+  install_resource "${PODS_ROOT}/FileBrowser/FileBrowser/Resources/zip@2x.png"
   install_resource "${PODS_ROOT}/SmileLock/SmileLock/Assets/PasswordContainerView.xib"
   install_resource "${PODS_ROOT}/SmileLock/SmileLock/Assets/Assets.xcassets"
 fi

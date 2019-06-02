@@ -26,7 +26,19 @@ class TransactionDetailsViewController:UIViewController {
     var messageStr : String {
         return messageInp.text ?? ""
     }
-
+    
+    var scannedPubKey : String?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+        
+        if scannedPubKey != nil {
+            userPubKeyInp.text = scannedPubKey
+            scannedPubKey = nil
+        }
+        
+    }
+    
     @IBAction func onSubmit(_ sender: Any) {
         if receiverPubKey.count < 90 {
             uiUtils.showAlertBox(
