@@ -163,67 +163,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receiver's Public Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-xJ-3C0">
-                                <rect key="frame" x="20" y="201" width="185" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver's Public Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-xJ-3C0">
+                                <rect key="frame" x="20" y="157" width="185" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount to be sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIK-dg-yey">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to be sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIK-dg-yey">
                                 <rect key="frame" x="20" y="336" width="159" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message for the receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-GN-RzR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message for the receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-GN-RzR">
                                 <rect key="frame" x="20" y="436" width="214" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste the receiver's public key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-Hx-kAn">
-                                <rect key="frame" x="20" y="233" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste the receiver's public key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-Hx-kAn">
+                                <rect key="frame" x="20" y="197" width="378" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or, scan the QR Code &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tg-Hi-shC">
-                                <rect key="frame" x="20" y="271" width="162" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, scan the QR Code &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tg-Hi-shC">
+                                <rect key="frame" x="20" y="243" width="162" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. 100 (Amount is in coins)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-uE-UJR">
-                                <rect key="frame" x="20" y="368" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. 100 (Amount is in coins)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-uE-UJR">
+                                <rect key="frame" x="20" y="368" width="378" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. Bought Pencils" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0L-0B-dEV">
-                                <rect key="frame" x="20" y="468" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. Bought Pencils" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0L-0B-dEV">
+                                <rect key="frame" x="20" y="468" width="378" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-XJ-yYv">
-                                <rect key="frame" x="160" y="552" width="97" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-XJ-yYv">
+                                <rect key="frame" x="158.5" y="538" width="97" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Send Coins"/>
                                 <connections>
                                     <action selector="onSubmit:" destination="8kf-lr-Bk8" eventType="touchUpInside" id="WpA-7m-f9L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
-                                <rect key="frame" x="190" y="268" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
+                                <rect key="frame" x="190" y="239.5" width="25" height="25"/>
                                 <state key="normal" image="icons8-camera"/>
                                 <connections>
                                     <segue destination="eqE-Gw-a7B" kind="show" identifier="publicKeyScanned" id="vi4-6p-E2Q"/>
@@ -231,6 +222,32 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GxF-Hx-kAn" firstAttribute="leading" secondItem="Eai-xJ-3C0" secondAttribute="leading" id="02I-c3-4Gg"/>
+                            <constraint firstItem="gvk-Zr-54O" firstAttribute="centerY" secondItem="9Tg-Hi-shC" secondAttribute="centerY" id="4sm-DA-4Ml"/>
+                            <constraint firstItem="s0L-0B-dEV" firstAttribute="leading" secondItem="GxF-Hx-kAn" secondAttribute="leading" id="6UO-AU-OyW"/>
+                            <constraint firstItem="GxF-Hx-kAn" firstAttribute="top" secondItem="Eai-xJ-3C0" secondAttribute="bottom" constant="16" id="7H6-1A-JfI"/>
+                            <constraint firstItem="gvk-Zr-54O" firstAttribute="leading" secondItem="9Tg-Hi-shC" secondAttribute="trailing" constant="8" id="9Dz-vi-iqa"/>
+                            <constraint firstItem="gnX-GN-RzR" firstAttribute="top" secondItem="4eh-uE-UJR" secondAttribute="bottom" constant="38" id="ALL-7h-Ih6"/>
+                            <constraint firstItem="s0L-0B-dEV" firstAttribute="trailing" secondItem="GxF-Hx-kAn" secondAttribute="trailing" id="Ism-jV-Dqo"/>
+                            <constraint firstItem="9Tg-Hi-shC" firstAttribute="leading" secondItem="GxF-Hx-kAn" secondAttribute="leading" id="PIf-uO-xDf"/>
+                            <constraint firstItem="s0L-0B-dEV" firstAttribute="top" secondItem="gnX-GN-RzR" secondAttribute="bottom" constant="8" id="T0R-4i-wHh"/>
+                            <constraint firstItem="4eh-uE-UJR" firstAttribute="trailing" secondItem="GxF-Hx-kAn" secondAttribute="trailing" id="XXt-16-KXV"/>
+                            <constraint firstItem="4eh-uE-UJR" firstAttribute="leading" secondItem="Eai-xJ-3C0" secondAttribute="leading" id="YuX-oc-G69"/>
+                            <constraint firstItem="SEI-u0-73J" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PIK-dg-yey" secondAttribute="trailing" symbolic="YES" id="ZLF-8b-NhR"/>
+                            <constraint firstItem="PIK-dg-yey" firstAttribute="top" secondItem="9Tg-Hi-shC" secondAttribute="bottom" constant="75" id="Zct-hs-6FY"/>
+                            <constraint firstItem="9Tg-Hi-shC" firstAttribute="top" secondItem="GxF-Hx-kAn" secondAttribute="bottom" constant="16" id="da3-r4-y1x"/>
+                            <constraint firstItem="fpR-XJ-yYv" firstAttribute="centerX" secondItem="SEI-u0-73J" secondAttribute="centerX" id="k8c-XM-b4f"/>
+                            <constraint firstItem="SEI-u0-73J" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Eai-xJ-3C0" secondAttribute="trailing" symbolic="YES" id="mJK-sc-4WZ"/>
+                            <constraint firstItem="gnX-GN-RzR" firstAttribute="leading" secondItem="SEI-u0-73J" secondAttribute="leading" constant="20" id="mKI-mx-ZMg"/>
+                            <constraint firstItem="SEI-u0-73J" firstAttribute="trailing" secondItem="GxF-Hx-kAn" secondAttribute="trailing" constant="16" id="oWn-us-MfZ"/>
+                            <constraint firstItem="SEI-u0-73J" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gnX-GN-RzR" secondAttribute="trailing" symbolic="YES" id="rVx-SY-IlD"/>
+                            <constraint firstItem="Eai-xJ-3C0" firstAttribute="top" secondItem="SEI-u0-73J" secondAttribute="top" multiplier="0.5" constant="113" id="rlf-Kh-DFC"/>
+                            <constraint firstItem="fpR-XJ-yYv" firstAttribute="top" secondItem="s0L-0B-dEV" secondAttribute="bottom" constant="40" id="sd3-GE-ltz"/>
+                            <constraint firstItem="PIK-dg-yey" firstAttribute="leading" secondItem="Eai-xJ-3C0" secondAttribute="leading" id="uG7-1U-i7P"/>
+                            <constraint firstItem="4eh-uE-UJR" firstAttribute="top" secondItem="PIK-dg-yey" secondAttribute="bottom" constant="8" id="wGz-8N-8SH"/>
+                            <constraint firstItem="Eai-xJ-3C0" firstAttribute="leading" secondItem="SEI-u0-73J" secondAttribute="leading" constant="20" id="xpp-PC-1rx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SEI-u0-73J"/>
                     </view>
                     <connections>
