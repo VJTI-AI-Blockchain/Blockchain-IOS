@@ -108,42 +108,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                <rect key="frame" x="87" y="188" width="240.00000000000006" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="qw0-H4-D5e"/>
-                                    <constraint firstAttribute="height" constant="128" id="tGc-Rh-baU"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share this QR Code to receive coins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-KG-wBO">
-                                <rect key="frame" x="70" y="372" width="274" height="64"/>
+                                <rect key="frame" x="70" y="286.5" width="274" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qr_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-6m-6ff">
-                                <rect key="frame" x="60" y="495" width="295" height="266"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-6m-6ff">
+                                <rect key="frame" x="82" y="422.5" width="250" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="avF-fI-yXa"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-fg-9R8">
-                                <rect key="frame" x="152" y="436.5" width="110" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="142.5" y="376" width="129" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
+                                <rect key="frame" x="100" y="138" width="214.00000000000006" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8ED-EN-CQR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ont-Yx-rjP" firstAttribute="bottom" secondItem="Vpy-6m-6ff" secondAttribute="bottom" constant="52" id="10h-Tw-i2e"/>
-                            <constraint firstItem="ont-Yx-rjP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eS3-KG-wBO" secondAttribute="trailing" symbolic="YES" id="5k7-Mr-fbR"/>
-                            <constraint firstItem="bD0-fg-9R8" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="5od-ji-16S"/>
-                            <constraint firstItem="Vpy-6m-6ff" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="CeL-P1-nfV"/>
-                            <constraint firstItem="YG0-zl-Jgq" firstAttribute="top" secondItem="ont-Yx-rjP" secondAttribute="top" constant="100" id="FFk-pi-MjK"/>
-                            <constraint firstItem="eS3-KG-wBO" firstAttribute="top" secondItem="YG0-zl-Jgq" secondAttribute="bottom" constant="56" id="Fyd-B6-kI5"/>
-                            <constraint firstItem="eS3-KG-wBO" firstAttribute="centerY" secondItem="ont-Yx-rjP" secondAttribute="centerY" constant="-46.5" id="Nbe-X6-mS6"/>
-                            <constraint firstItem="eS3-KG-wBO" firstAttribute="leading" secondItem="ont-Yx-rjP" secondAttribute="leading" constant="70" id="elB-GI-kQk"/>
-                            <constraint firstItem="bD0-fg-9R8" firstAttribute="firstBaseline" secondItem="eS3-KG-wBO" secondAttribute="baseline" constant="28" symbolType="layoutAnchor" id="eqt-um-VKu"/>
-                            <constraint firstItem="Vpy-6m-6ff" firstAttribute="top" secondItem="eS3-KG-wBO" secondAttribute="bottom" constant="59" id="f0X-NR-jKO"/>
-                            <constraint firstItem="YG0-zl-Jgq" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="or5-A8-DFZ"/>
+                            <constraint firstItem="Vpy-6m-6ff" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="0pg-Hb-Pf9"/>
+                            <constraint firstItem="eS3-KG-wBO" firstAttribute="top" secondItem="YG0-zl-Jgq" secondAttribute="bottom" multiplier="0.8" constant="80" id="HTj-n2-PC1"/>
+                            <constraint firstItem="Vpy-6m-6ff" firstAttribute="top" secondItem="bD0-fg-9R8" secondAttribute="bottom" constant="12.5" id="Iis-iy-jAv"/>
+                            <constraint firstItem="bD0-fg-9R8" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="JDy-Eq-Xu7"/>
+                            <constraint firstItem="YG0-zl-Jgq" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="OxT-Nc-dOB"/>
+                            <constraint firstItem="eS3-KG-wBO" firstAttribute="centerX" secondItem="ont-Yx-rjP" secondAttribute="centerX" id="PK5-Ig-ruf"/>
+                            <constraint firstItem="YG0-zl-Jgq" firstAttribute="top" secondItem="ont-Yx-rjP" secondAttribute="top" constant="50" id="omX-FG-3RR"/>
+                            <constraint firstItem="bD0-fg-9R8" firstAttribute="top" secondItem="eS3-KG-wBO" secondAttribute="bottom" multiplier="0.9" constant="100" id="pB0-I7-HEB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ont-Yx-rjP"/>
                     </view>
