@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QUr-a4-qX6">
-                                <rect key="frame" x="27" y="320.5" width="360" height="265"/>
+                                <rect key="frame" x="30" y="279.5" width="354" height="347"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="OCg-pl-03k"/>
-                                    <constraint firstAttribute="width" constant="360" id="YPQ-d2-4eD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="347" id="TRR-KF-46J"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QUr-a4-qX6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" multiplier="0.5" constant="30" id="aFo-CW-kI2"/>
                             <constraint firstItem="QUr-a4-qX6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c6S-B4-1TZ"/>
                             <constraint firstItem="QUr-a4-qX6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lVx-G5-nQj"/>
                         </constraints>
