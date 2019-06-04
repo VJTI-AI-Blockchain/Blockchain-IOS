@@ -113,8 +113,11 @@ private extension VerifyPinViewController {
                 guard response.result.isSuccess,
                 let receivedJSON = response.result.value as? [String: Any]
                     else {
-                    print("Error in transaction \(response.result), \(response.response)")
-                    uiUtils.showAlertBox(title: "Transaction Failed", message: response.result.description as! String, sender: self)
+                        let data = response.data;
+                        let utf8Text = (data != nil) ? (String(data: data!, encoding: .utf8)) : "No response";
+                        
+                        print("Error in transaction \(response.result), \(String(describing: response.response))")
+                        uiUtils.showAlertBox(title: "Transaction Failed", message: utf8Text ?? "", sender: self)
                     return
                 }
                 
@@ -155,7 +158,7 @@ private extension VerifyPinViewController {
                 if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                     print("Data: \(utf8Text)")
                     print(utf8Text)
-                    print(response.response)
+                    //print(response.response)
                     uiUtils.showAlertBox(
                         title: (response.response?.statusCode ?? 400) == 200 ? "Transaction Succeeded" : "Transaction Failed",
                         message: utf8Text,

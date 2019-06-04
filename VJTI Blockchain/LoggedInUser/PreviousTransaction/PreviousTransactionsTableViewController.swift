@@ -79,7 +79,7 @@ class PreviousTransactionsTableViewController : UITableViewController {
                 
                 for i in jsonArray.indices {
                     
-                    var x = JSON(jsonArray[i] as! String).rawString()?.data(using: String.Encoding.utf8)
+                    let x = JSON(jsonArray[i] as! String).rawString()?.data(using: String.Encoding.utf8)
                     let details = try! JSONSerialization.jsonObject(with: x!, options: .allowFragments) as![String: Any]
                     print(details["amount"] as! Int)
 

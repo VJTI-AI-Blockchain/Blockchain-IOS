@@ -245,7 +245,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
-                                        <rect key="frame" x="236.5" y="131" width="25" height="24"/>
+                                        <rect key="frame" x="236.5" y="131" width="16" height="24"/>
                                         <state key="normal" image="icons8-camera"/>
                                         <connections>
                                             <segue destination="eqE-Gw-a7B" kind="show" identifier="publicKeyScanned" id="vi4-6p-E2Q"/>
@@ -692,7 +692,6 @@
         <image name="transaction" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vi4-6p-E2Q"/>
         <segue reference="cqy-qa-803"/>
     </inferredMetricsTieBreakers>
 </document>
