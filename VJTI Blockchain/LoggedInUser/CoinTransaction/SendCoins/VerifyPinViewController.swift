@@ -107,17 +107,19 @@ private extension VerifyPinViewController {
             parameters: self.transactionObj?.getJSONObj(),
             encoding: JSONEncoding.default,
             headers: ["Content-Type": "application/json"]
-            ).responseJSON{
+            )
+            .validate(statusCode: 200..<300)
+            .responseJSON{
                (response) in
                 
                 guard response.result.isSuccess,
                 let receivedJSON = response.result.value as? [String: Any]
                     else {
                         let data = response.data;
-                        let utf8Text = (data != nil) ? (String(data: data!, encoding: .utf8)) : "No response";
+                        let utf8Text = (data != nil) ? (String(data: data!, encoding: .utf8)!) : "Check your internet connection";
                         
                         print("Error in transaction \(response.result), \(String(describing: response.response))")
-                        uiUtils.showAlertBox(title: "Transaction Failed", message: utf8Text ?? "", sender: self)
+                        uiUtils.showAlertBox(title: "Transaction Failed", message: utf8Text, sender: self)
                     return
                 }
                 
@@ -152,7 +154,9 @@ private extension VerifyPinViewController {
             ],
             encoding: JSONEncoding.default,
             headers: ["Content-Type": "application/json"]
-            ).responseString {
+            )
+            .validate(statusCode: 200..<300)
+            .responseString {
                 (response) in
                 
                 if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {

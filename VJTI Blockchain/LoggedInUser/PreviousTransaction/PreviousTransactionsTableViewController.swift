@@ -65,10 +65,20 @@ class PreviousTransactionsTableViewController : UITableViewController {
             encoding: JSONEncoding.default,
             headers: ["Content-Type": "application/json"]
             )
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
             .responseJSON { response in
                 guard response.result.isSuccess,
                     let value = response.result.value else {
-                        print("Error while fetching tags: \(String(describing: response.result.error))")
+                        
+                        if !(200 ..< 300).contains(response.response?.statusCode ?? 404) {
+                            uiUtils.showAlertBox(
+                                title: "Unable to load Transaction History",
+                                message: "Please check your internet connection. Contact us in case the problem still persists.",
+                                sender: self)
+                        }
+                            self.refreshControl?.endRefreshing()
+                            self.tableView.reloadData()
                         return
                 }
 
