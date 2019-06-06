@@ -66,7 +66,6 @@ class PreviousTransactionsTableViewController : UITableViewController {
             headers: ["Content-Type": "application/json"]
             )
             .validate(statusCode: 200..<300)
-            .validate(contentType: ["application/json"])
             .responseJSON { response in
                 guard response.result.isSuccess,
                     let value = response.result.value else {
