@@ -12,6 +12,7 @@ import CryptoSwift
 class BackupUtils {
     
     private static func getAESEncryptor(key: String) -> AES {
+        
         let pwd_key  = Data(key.bytes).sha1().bytes
         
         let shortPwd = pwd_key.prefix(16)
@@ -32,18 +33,21 @@ class BackupUtils {
             "pin": User.getPin()!
         ]
         
+        //let userJSON = "{\"name\":\"\(userDetails.name)\",\"emai l\":\"\(userDetails.email)\",\"publicKey\":\"\(userDetails.pubKeyStr)\",\"privateKey\":\"\(userDetails.pvtKeyStr)\",{\"pin\":\"\(User.getPin() ?? "1234")\"}";
+        
         let usrJSONObj = try JSONSerialization.data(withJSONObject: userJSON, options: [])
         let jsonString = String(data: usrJSONObj, encoding: String.Encoding.utf8)
         
         let cypherText = try encryptor.encrypt(Array(jsonString!.utf8)).toBase64()
-        
+        print(cypherText ?? "Well Shit");
         try saveToFile(backup: cypherText!)
     }
     
     private static func saveToFile(backup:String) throws {
         
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let fileName          = documentDirectory.appendingPathComponent("credentials\(Date.init().hashValue).txt")
+        //let fileName          = documentDirectory.appendingPathComponent("credentials\(Date.init().hashValue).txt")
+        let fileName          = documentDirectory.appendingPathComponent("credentials.txt")
         
         try backup.write(to: fileName, atomically: true, encoding: String.Encoding.utf8);
         

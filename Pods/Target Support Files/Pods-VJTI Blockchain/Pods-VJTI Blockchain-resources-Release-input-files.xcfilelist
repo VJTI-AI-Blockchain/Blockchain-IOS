@@ -1,12 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain-resources.sh
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/documents@2x.png
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/file@2x.png
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/FileBrowser.xib
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/folder@2x.png
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/image@2x.png
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/pdf@2x.png
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/PreviewTransitionViewController.xib
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/WebviewPreviewViewContoller.xib
-${PODS_ROOT}/FileBrowser/FileBrowser/Resources/zip@2x.png
 ${PODS_ROOT}/SmileLock/SmileLock/Assets/PasswordContainerView.xib
 ${PODS_ROOT}/SmileLock/SmileLock/Assets/Assets.xcassets

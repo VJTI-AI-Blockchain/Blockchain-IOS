@@ -31,6 +31,9 @@
                                         <rect key="frame" x="177.5" y="628" width="59" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Restore"/>
+                                        <connections>
+                                            <action selector="onBackupButtonClick:" destination="5po-D5-K3n" eventType="touchUpInside" id="sRk-X4-ZVA"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-d6-0dj">
                                         <rect key="frame" x="112.5" y="212" width="189" height="34"/>

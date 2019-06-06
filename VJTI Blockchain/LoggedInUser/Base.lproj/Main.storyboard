@@ -409,7 +409,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXd-HP-MIR">
-                                <rect key="frame" x="0.0" y="54" width="414" height="749"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="copy-icon" translatesAutoresizingMaskIntoConstraints="NO" id="EXr-h8-s66">
                                         <rect key="frame" x="182" y="20" width="50" height="50"/>
@@ -425,13 +425,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Profile?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBE-2X-gjF">
-                                        <rect key="frame" x="126.5" y="359" width="161" height="29"/>
+                                        <rect key="frame" x="126.5" y="371" width="161" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHd-Rg-T2F">
-                                        <rect key="frame" x="20" y="398" width="374" height="235.5"/>
+                                        <rect key="frame" x="20" y="410" width="374" height="232.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a secret phrase. Use this to restore your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-JB-eXQ">
                                                 <rect key="frame" x="16" y="17" width="342" height="38.5"/>
@@ -497,7 +497,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GR-q9-QNx">
-                                                <rect key="frame" x="212" y="97.5" width="25" height="25"/>
+                                                <rect key="frame" x="212" y="102" width="16" height="16"/>
                                                 <state key="normal" backgroundImage="copy-icon"/>
                                                 <connections>
                                                     <action selector="copyButtonClick:" destination="PvK-hp-Nvz" eventType="touchUpInside" id="sqN-YO-VaR"/>

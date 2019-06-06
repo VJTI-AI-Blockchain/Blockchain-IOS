@@ -61,7 +61,19 @@ class ProfileViewController: UIViewController {
         emailLabel.text     = user.email
         publicKeyLabel.text = user.pubKeyStr
 
-        profileImageIdenticonView.image = GitHubIdenticon().icon(from: user.pubKeyStr, size: CGSize(width: 100, height: 100))
+        //profileImageIdenticonView.image = GitHubIdenticon().icon(from: user.pubKeyStr, size: CGSize(width: 100, height: 100))
         
+//        profileImageIdenticonView.image =
+//        AndroidIdenticon().getImage(
+//            from: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECfeFz2xjqy/PPmlVgnKiIETxhy45uVcvTFu9he54ANDk1QvIHXfNU5n9C3Sezc2NyX++TJQqouDQOjZcsObRjg==",
+//            size: CGSize(width: 100, height: 100)
+//        )
+
+        profileImageIdenticonView.image =
+            AndroidIdenticon().getImage(
+                from: user.pubKeyStr,
+                size: CGSize(width: 100, height: 100)
+        )
+
     }
 }

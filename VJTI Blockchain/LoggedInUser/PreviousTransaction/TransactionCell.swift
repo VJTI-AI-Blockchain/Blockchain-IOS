@@ -36,10 +36,16 @@ class TransactionCell : UITableViewCell {
         timestampLabel?.text = "\(date)";
         
         
-        senderIdenticon?.image = GitHubIdenticon().icon(
+//        senderIdenticon?.image = GitHubIdenticon().icon(
+//            from: sender,
+//            size: CGSize(width: 100, height: 100)
+//        )
+        
+        senderIdenticon.image = AndroidIdenticon().getImage(
             from: sender,
             size: CGSize(width: 100, height: 100)
         )
+        
         
     }
 }

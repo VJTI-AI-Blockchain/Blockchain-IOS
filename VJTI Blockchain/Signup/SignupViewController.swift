@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+import MobileCoreServices
+//import FileBrowser
 
-class SignupViewController : UIViewController {
+class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -80,4 +82,38 @@ class SignupViewController : UIViewController {
         return emailCheckRegex.firstMatch(in: userEmail, options: [], range: range) != nil
     }
     
+    @IBAction func onBackupButtonClick(_ sender: Any) {
+//        let fileBrowser = FileBrowser(initialPath: customPath);
+//
+//        fileBrowser.didSelectFile = { (file: FBFile) -> Void in
+//            print(file.displayName)
+//        }
+        //NSData.dataWith
+        
+        let importMenu = UIDocumentMenuViewController(documentTypes: [String(kUTTypePDF)], in: .import)
+        importMenu.delegate = self
+        importMenu.modalPresentationStyle = .formSheet
+        importMenu.addOption(withTitle: "Create New Document", image: nil, order: .first, handler: { print("New Doc Requested") })
+        self.present(importMenu, animated: true, completion: nil)
+    
+    }
+    
+    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        guard let myURL = urls.first else {
+            return
+        }
+        print("import result : \(myURL)")
+    }
+    
+    
+    public func documentMenu(_ documentMenu:UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
+        documentPicker.delegate = self
+        present(documentPicker, animated: true, completion: nil)
+    }
+    
+    
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        print("view was cancelled")
+        dismiss(animated: true, completion: nil)
+    }
 }
