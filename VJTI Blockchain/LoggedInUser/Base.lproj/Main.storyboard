@@ -64,7 +64,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                        <rect key="frame" x="199" y="332" width="16" height="60"/>
+                                        <rect key="frame" x="100" y="332" width="214.00000000000006" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="3YV-6N-VqL"/>
                                         </constraints>
@@ -124,7 +124,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                        <rect key="frame" x="199" y="50" width="16" height="120"/>
+                                        <rect key="frame" x="100" y="50" width="214.00000000000006" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="8ED-EN-CQR"/>
                                         </constraints>
@@ -142,7 +142,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-6m-6ff">
-                                        <rect key="frame" x="199" y="360" width="16" height="16"/>
+                                        <rect key="frame" x="119.5" y="360" width="175" height="175"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -245,7 +245,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
-                                        <rect key="frame" x="236.5" y="131" width="16" height="24"/>
+                                        <rect key="frame" x="236.5" y="131" width="25" height="24"/>
                                         <state key="normal" image="icons8-camera"/>
                                         <connections>
                                             <segue destination="eqE-Gw-a7B" kind="show" identifier="publicKeyScanned" id="vi4-6p-E2Q"/>
@@ -412,26 +412,26 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="copy-icon" translatesAutoresizingMaskIntoConstraints="NO" id="EXr-h8-s66">
-                                        <rect key="frame" x="182" y="20" width="50" height="50"/>
+                                        <rect key="frame" x="157" y="20" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="RJS-3G-Ppi"/>
-                                            <constraint firstAttribute="height" constant="50" id="mgt-X6-KKC"/>
+                                            <constraint firstAttribute="width" constant="100" id="RJS-3G-Ppi"/>
+                                            <constraint firstAttribute="height" constant="100" id="mgt-X6-KKC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8g-Wd-jYe">
-                                        <rect key="frame" x="148" y="126" width="118" height="29"/>
+                                        <rect key="frame" x="148" y="176" width="118" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Profile?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBE-2X-gjF">
-                                        <rect key="frame" x="126.5" y="371" width="161" height="29"/>
+                                        <rect key="frame" x="126.5" y="393" width="161" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHd-Rg-T2F">
-                                        <rect key="frame" x="20" y="410" width="374" height="232.5"/>
+                                        <rect key="frame" x="20" y="432" width="374" height="232.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a secret phrase. Use this to restore your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-JB-eXQ">
                                                 <rect key="frame" x="16" y="17" width="342" height="38.5"/>
@@ -497,7 +497,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GR-q9-QNx">
-                                                <rect key="frame" x="212" y="102" width="16" height="16"/>
+                                                <rect key="frame" x="212" y="97.5" width="25" height="25"/>
                                                 <state key="normal" backgroundImage="copy-icon"/>
                                                 <connections>
                                                     <action selector="copyButtonClick:" destination="PvK-hp-Nvz" eventType="touchUpInside" id="sqN-YO-VaR"/>
@@ -538,7 +538,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="eBE-2X-gjF" firstAttribute="top" secondItem="6Ki-Jg-SHJ" secondAttribute="bottom" constant="58" id="1hL-VA-AQA"/>
+                                    <constraint firstItem="eBE-2X-gjF" firstAttribute="top" secondItem="6Ki-Jg-SHJ" secondAttribute="bottom" constant="30" id="1hL-VA-AQA"/>
                                     <constraint firstItem="W8g-Wd-jYe" firstAttribute="centerX" secondItem="cXd-HP-MIR" secondAttribute="centerX" id="3QR-ar-X86"/>
                                     <constraint firstItem="mHd-Rg-T2F" firstAttribute="centerX" secondItem="cXd-HP-MIR" secondAttribute="centerX" id="Hq9-0W-awp"/>
                                     <constraint firstItem="mHd-Rg-T2F" firstAttribute="leading" secondItem="6Ki-Jg-SHJ" secondAttribute="leading" id="KaY-nV-3ZN"/>

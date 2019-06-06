@@ -72,7 +72,7 @@ class ProfileViewController: UIViewController {
         profileImageIdenticonView.image =
             AndroidIdenticon().getImage(
                 from: user.pubKeyStr,
-                size: CGSize(width: 100, height: 100)
+                size: CGSize(width: 200, height: 200)
         )
 
     }
