@@ -57,8 +57,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         user = try! User()
 
-        userNameLabel.text  = user.name
-        emailLabel.text     = user.email
+        userNameLabel.text  = ProfanityFilter.cleanUp(user.name)
+        emailLabel.text     = ProfanityFilter.cleanUp(user.email)
         publicKeyLabel.text = user.pubKeyStr
 
         //profileImageIdenticonView.image = GitHubIdenticon().icon(from: user.pubKeyStr, size: CGSize(width: 100, height: 100))

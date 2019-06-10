@@ -18,7 +18,7 @@ class TransactionCell : UITableViewCell {
     @IBOutlet weak var senderIdenticon: UIImageView!
     
     func setRow(message: String, amount: Int, timestamp: Int, sender: String) {
-        messageLabel?.text = message
+        messageLabel?.text = ProfanityFilter.cleanUp(message)
         
         
         transactionAmtLabel?.text = "\(amount) Coins"
