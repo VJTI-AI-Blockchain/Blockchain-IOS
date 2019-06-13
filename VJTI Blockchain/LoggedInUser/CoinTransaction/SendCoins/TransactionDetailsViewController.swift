@@ -62,6 +62,14 @@ class TransactionDetailsViewController:UIViewController {
             return
         }
         
+        if !ProfanityFilter.isCleanWord(messageStr) {
+            uiUtils.showAlertBox(
+                title: "Abusive Content Detected",
+                message: "Please refrain from using offensive words in your message.",
+                sender: self
+            )
+        }
+        
         performSegue(withIdentifier: "verifyTransactionSeguey", sender: sender)
     }
     
