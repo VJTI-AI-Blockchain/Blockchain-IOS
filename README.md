@@ -18,6 +18,7 @@ The official iOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJ
 - [ ] Retrieve backup (awaiting testing)
 - [X] Cross Device View Support
 - [X] Identicons Match Android Identicons
+- [X] Profanity filter added for transactions
 - [ ] Public Beta Testing
 
 ### Installation Instructions
