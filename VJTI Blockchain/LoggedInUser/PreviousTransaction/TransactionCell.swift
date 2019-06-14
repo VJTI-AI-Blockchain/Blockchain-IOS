@@ -31,9 +31,9 @@ class TransactionCell : UITableViewCell {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        let date = Date(timeIntervalSince1970: TimeInterval(timestamp + 30 * 60 + 5 * 3600))
+        let date = Date(timeIntervalSince1970: TimeInterval(timestamp))
         
-        timestampLabel?.text = "\(date)";
+        timestampLabel?.text = "\(date.description(with: Locale.current))";
         
         
 //        senderIdenticon?.image = GitHubIdenticon().icon(
