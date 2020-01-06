@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TransactionDetailsViewController:UIViewController {
+class TransactionDetailsViewController:UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userPubKeyInp: UITextField!
     @IBOutlet weak var coinInp: UITextField!
@@ -90,5 +90,24 @@ class TransactionDetailsViewController:UIViewController {
         case .some(_): break
             //TODO
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           self.view.endEditing(true)
+       }
+       
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           print("textShouldReturn")
+           userPubKeyInp.resignFirstResponder()
+        coinInp.resignFirstResponder()
+        messageInp.resignFirstResponder()
+           return true
+       }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.coinInp.delegate=self
+        self.messageInp.delegate=self
+        self.userPubKeyInp.delegate=self
     }
 }

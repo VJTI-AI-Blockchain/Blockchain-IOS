@@ -11,7 +11,7 @@ import UIKit
 import MarqueeLabel
 import IGIdenticon
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     var user : User!
     
@@ -53,14 +53,35 @@ class ProfileViewController: UIViewController {
 
     }
     
+//  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//   super.touchesBegan(touches, with: event)
+//       view.endEditing(true)
+//      print("touching--------------------------")
+//
+//  self.backupPasswordTextView.resignFirstResponder()
+//    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textShouldReturn")
+        backupPasswordTextView.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.backupPasswordTextView.delegate = self
+        
         user = try! User()
 
         userNameLabel.text  = ProfanityFilter.cleanUp(user.name)
         emailLabel.text     = ProfanityFilter.cleanUp(user.email)
         publicKeyLabel.text = user.pubKeyStr
-
+        
+    
         //profileImageIdenticonView.image = GitHubIdenticon().icon(from: user.pubKeyStr, size: CGSize(width: 100, height: 100))
         
 //        profileImageIdenticonView.image =

@@ -46,6 +46,9 @@ class BackupUtils {
     private static func saveToFile(backup:String) throws {
         
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        
+        
+      
         //let fileName          = documentDirectory.appendingPathComponent("credentials\(Date.init().hashValue).txt")
         let fileName          = documentDirectory.appendingPathComponent("credentials.txt")
         

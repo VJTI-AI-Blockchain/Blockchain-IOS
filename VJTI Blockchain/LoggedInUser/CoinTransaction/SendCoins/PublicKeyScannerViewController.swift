@@ -100,7 +100,7 @@ class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControll
     }
     
     @IBAction func scanInModalAction(_ sender: AnyObject) {
-        opencam();
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25FE5FD723C3542100072F12 /* RestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FE5FD623C3542100072F12 /* RestoreViewController.swift */; };
 		6D8614831C279D8AFE2EEB3D /* libPods-VJTI Blockchain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */; };
 		E40884C2229D325300618ACF /* uiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C1229D325300618ACF /* uiUtils.swift */; };
 		E40884C4229D374C00618ACF /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40884C3229D374C00618ACF /* TransactionDetails.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		182748E771E0CFABDE0A7BE7 /* libPods-VJTI Blockchain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VJTI Blockchain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FE5FD623C3542100072F12 /* RestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreViewController.swift; sourceTree = "<group>"; };
 		3F6CA4395E3058E956EDEED2 /* Pods-VJTI Blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.debug.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBBF79F766AE26B16AA694E /* Pods-VJTI Blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VJTI Blockchain.release.xcconfig"; path = "Target Support Files/Pods-VJTI Blockchain/Pods-VJTI Blockchain.release.xcconfig"; sourceTree = "<group>"; };
 		E40884C1229D325300618ACF /* uiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiUtils.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				E4DC9D362297CCBE00CBAB0E /* signup.storyboard */,
 				E4DC9D382297DF4100CBAB0E /* SignupViewController.swift */,
 				E4F3BB502298010B0050E772 /* SecretPinSetupViewController.swift */,
+				25FE5FD623C3542100072F12 /* RestoreViewController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				E4CB8CE7229B1E0200A532CC /* ECDecryptable.swift in Sources */,
 				E4CB8CE9229B1E0200A532CC /* ASN1.swift in Sources */,
 				E445EA862296ADC100B1C1EB /* PreviousTransactionsTableViewController.swift in Sources */,
+				25FE5FD723C3542100072F12 /* RestoreViewController.swift in Sources */,
 				E4CB8CE5229B1E0200A532CC /* ECPrivateKey.swift in Sources */,
 				E4CB8C9D229AD69700A532CC /* User.swift in Sources */,
 				E4CB8CEB229B1E0200A532CC /* ECEncryptable.swift in Sources */,
