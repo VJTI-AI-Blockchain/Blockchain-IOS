@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -182,11 +180,11 @@
             <objects>
                 <viewController title="Send Coins" id="8kf-lr-Bk8" customClass="TransactionDetailsViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IS3-3V-gJP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzg-aC-3cr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver's Public Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-xJ-3C0">
                                         <rect key="frame" x="114.5" y="60" width="185" height="24"/>
@@ -195,16 +193,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste the receiver's public key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-Hx-kAn">
-                                        <rect key="frame" x="67" y="100" width="280" height="30"/>
+                                        <rect key="frame" x="67" y="100" width="280" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="UBs-Ja-QYx"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, scan the QR Code &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tg-Hi-shC">
-                                        <rect key="frame" x="67" y="134" width="162" height="18"/>
+                                        <rect key="frame" x="67" y="138" width="162" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="hkX-yT-wi7"/>
                                         </constraints>
@@ -213,31 +210,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to be sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIK-dg-yey">
-                                        <rect key="frame" x="127.5" y="192" width="159" height="24"/>
+                                        <rect key="frame" x="127.5" y="196" width="159" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. 100 (Amount is in coins)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-uE-UJR">
-                                        <rect key="frame" x="67" y="224" width="280" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="67" y="228" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message for the receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-GN-RzR">
-                                        <rect key="frame" x="100" y="292" width="214" height="24"/>
+                                        <rect key="frame" x="100" y="300" width="214" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. Bought Pencils" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0L-0B-dEV">
-                                        <rect key="frame" x="67" y="324" width="280" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="67" y="332" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-XJ-yYv">
-                                        <rect key="frame" x="158.5" y="394" width="97" height="35"/>
+                                        <rect key="frame" x="158.5" y="406" width="97" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Send Coins"/>
                                         <connections>
@@ -245,7 +240,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-Zr-54O">
-                                        <rect key="frame" x="236.5" y="131" width="25" height="24"/>
+                                        <rect key="frame" x="236.5" y="135" width="25" height="24"/>
                                         <state key="normal" image="icons8-camera"/>
                                         <connections>
                                             <segue destination="eqE-Gw-a7B" kind="show" identifier="publicKeyScanned" id="vi4-6p-E2Q"/>
@@ -288,6 +283,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SEI-u0-73J"/>
                     </view>
+                    <navigationItem key="navigationItem" id="g2L-Z8-wBI"/>
                     <connections>
                         <outlet property="coinInp" destination="4eh-uE-UJR" id="4XI-PB-wMC"/>
                         <outlet property="messageInp" destination="s0L-0B-dEV" id="LVc-QK-V6W"/>
@@ -304,11 +300,11 @@
             <objects>
                 <viewController title="Verifying Transaction" id="3FA-Qa-9IV" customClass="VerifyPinViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qwG-L1-a0g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify the transaction by putting your secret pin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixI-Vq-qzd">
-                                <rect key="frame" x="65" y="104" width="284" height="48"/>
+                                <rect key="frame" x="65" y="60" width="284" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="284" id="AhS-ev-Alf"/>
                                 </constraints>
@@ -317,7 +313,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAO-6k-EgQ" customClass="UIStackView">
-                                <rect key="frame" x="40" y="228" width="334" height="604"/>
+                                <rect key="frame" x="40" y="184" width="334" height="594"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -332,6 +328,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QVq-RX-Pvu"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hgL-qH-vcY"/>
                     <connections>
                         <outlet property="instructionLabel" destination="ixI-Vq-qzd" id="jcO-xe-uhI"/>
                         <outlet property="passwordStackView" destination="WAO-6k-EgQ" id="R1p-v5-e7i"/>
@@ -346,15 +343,15 @@
             <objects>
                 <viewController title="Scan  Key" id="eqE-Gw-a7B" customClass="PublicKeyScannerViewController" customModule="VJTI_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xe2-Jc-Ghn" customClass="QRCodeReaderView" customModule="QRCodeReader">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtB-BS-Wkk" customClass="QRCodeReaderView" customModule="QRCodeReader">
-                                <rect key="frame" x="0.0" y="44" width="414" height="609"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="599"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-bR-ZRp">
-                                <rect key="frame" x="159.5" y="723" width="95" height="30"/>
+                                <rect key="frame" x="159.5" y="669" width="95" height="30"/>
                                 <state key="normal" title="scan in modal"/>
                                 <connections>
                                     <action selector="scanInModalAction:" destination="eqE-Gw-a7B" eventType="touchUpInside" id="y1W-W7-yHR"/>
@@ -372,9 +369,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dco-Fj-yO2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jis-bo-wsK"/>
                     <connections>
                         <outlet property="previewView" destination="gtB-BS-Wkk" id="Q1c-RE-inr"/>
-                        <segue destination="8kf-lr-Bk8" kind="show" id="cqy-qa-803"/>
+                        <segue destination="8kf-lr-Bk8" kind="show" identifier="qrscansuccess" id="5UY-Pu-CQa"/>
+                        <segue destination="8kf-lr-Bk8" kind="custom" id="ZvG-LP-wwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVV-ke-5eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,7 +430,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHd-Rg-T2F">
-                                        <rect key="frame" x="20" y="432" width="374" height="232.5"/>
+                                        <rect key="frame" x="20" y="432" width="374" height="236.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a secret phrase. Use this to restore your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-JB-eXQ">
                                                 <rect key="frame" x="16" y="17" width="342" height="38.5"/>
@@ -440,19 +439,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. vjti123! (Minimum 12 characters)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5R-Fv-Myo">
-                                                <rect key="frame" x="18" y="68" width="338" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="18" y="68" width="338" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The backup file will be stored in your internal storage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-YG-Wip">
-                                                <rect key="frame" x="16" y="166" width="342" height="38.5"/>
+                                                <rect key="frame" x="16" y="170" width="342" height="38.5"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-qG-J4V">
-                                                <rect key="frame" x="152.5" y="104" width="69" height="30"/>
+                                                <rect key="frame" x="152.5" y="108" width="69" height="30"/>
                                                 <state key="normal" title="Download"/>
                                                 <connections>
                                                     <action selector="backupProfileAction:" destination="PvK-hp-Nvz" eventType="touchUpInside" id="ci8-4F-xtt"/>
@@ -609,7 +607,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sq7-TI-1aD" id="tDm-dK-sBT">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="111.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsi-eW-wXZ">
@@ -640,7 +638,7 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EG-3i-Dx5">
-                                            <rect key="frame" x="351" y="77" width="37.5" height="24"/>
+                                            <rect key="frame" x="351" y="77.5" width="37.5" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.035311292655521354" green="0.56368040739611902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -692,6 +690,6 @@
         <image name="transaction" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cqy-qa-803"/>
+        <segue reference="5UY-Pu-CQa"/>
     </inferredMetricsTieBreakers>
 </document>
