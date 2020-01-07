@@ -11,7 +11,7 @@ import UIKit
 import MobileCoreServices
 //import FileBrowser
 
-class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate {
+class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -24,6 +24,7 @@ class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocument
         return emailTextField.text ?? ""
     }
     
+   
     let emailCheckRegex = try! NSRegularExpression(pattern:
         "^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
         + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
@@ -32,10 +33,12 @@ class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocument
         + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
             + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$");
     
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad();
+//
+//    }
+    
+    
     @IBAction func onSubmitDetails(_ sender: Any) {
         print("Submitted")
         
@@ -115,5 +118,29 @@ class SignupViewController : UIViewController, UIDocumentMenuDelegate,UIDocument
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         print("view was cancelled")
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           self.view.endEditing(true)
+       }
+    
+       
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           print("textShouldReturn")
+
+           nameTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+       
+           return true
+       }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        nameTextField.returnKeyType=UIReturnKeyType.done
+               emailTextField.returnKeyType=UIReturnKeyType.done
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.nameTextField.delegate=self
+        self.emailTextField.delegate=self
     }
 }

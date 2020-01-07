@@ -65,6 +65,10 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+    backupPasswordTextView.returnKeyType=UIReturnKeyType.done
+               
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("textShouldReturn")
         backupPasswordTextView.resignFirstResponder()

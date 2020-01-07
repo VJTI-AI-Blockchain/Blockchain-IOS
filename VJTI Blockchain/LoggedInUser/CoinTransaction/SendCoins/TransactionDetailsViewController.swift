@@ -96,6 +96,12 @@ class TransactionDetailsViewController:UIViewController, UITextFieldDelegate {
            self.view.endEditing(true)
        }
        
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        userPubKeyInp.returnKeyType=UIReturnKeyType.done
+        messageInp.returnKeyType=UIReturnKeyType.done
+        coinInp.returnKeyType=UIReturnKeyType.done
+    }
+    
        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
            print("textShouldReturn")
            userPubKeyInp.resignFirstResponder()
