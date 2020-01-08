@@ -15,6 +15,8 @@ class TransactionDetailsViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var coinInp: UITextField!
     @IBOutlet weak var messageInp: UITextField!
     
+    
+    
     var receiverPubKey : String {
         return userPubKeyInp.text ?? ""
     }
@@ -31,7 +33,6 @@ class TransactionDetailsViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
-        
         if scannedPubKey != nil {
             userPubKeyInp.text = scannedPubKey
             scannedPubKey = nil

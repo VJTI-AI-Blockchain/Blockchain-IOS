@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
                 switch response.result {
                     case .success(_):
                         if let count = response.result.value{
-                            self.coinCountLabel.text = "\(count) Coins"
+                            self.coinCountLabel.text = "\(count)"
                     }
                 case .failure(_):
                         self.coinCountLabel.text = "Unable to retrieve balance"
