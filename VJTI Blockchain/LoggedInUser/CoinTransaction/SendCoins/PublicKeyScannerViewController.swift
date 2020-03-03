@@ -37,6 +37,7 @@ class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControll
     }
     override func viewDidLoad() {
         super.viewDidLoad();
+        
         opencam();
     }
     
@@ -100,8 +101,9 @@ class PublicKeyScannerViewController: UIViewController, QRCodeReaderViewControll
     }
     
     
-    @IBAction func scanInModalAction(_ sender: AnyObject)
+   @IBAction func scanInModalAction(_ sender: AnyObject)
     {
+        print("Called")
         opencam();
     }
     

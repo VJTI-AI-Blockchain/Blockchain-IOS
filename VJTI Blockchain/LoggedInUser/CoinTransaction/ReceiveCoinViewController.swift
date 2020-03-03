@@ -14,6 +14,7 @@ class ReceiveCoinViewController: UIViewController {
     
     @IBOutlet weak var publicKeyQRImage: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var publicKeyLabel: UILabel!
     
     var user : User?
     
@@ -22,6 +23,7 @@ class ReceiveCoinViewController: UIViewController {
         user = try! User()
         
         userNameLabel.text = user?.name
+        publicKeyLabel.text = user?.pubKeyStr
         
         var qrCode   = QRCode((user?.pubKeyStr)!)
         qrCode?.size = CGSize(width: 200, height: 200)

@@ -27,8 +27,17 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHd-by-ule">
                                         <rect key="frame" x="175" y="582" width="59" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Restore"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                        <state key="normal" title="Restore">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onBackupButtonClick:" destination="5po-D5-K3n" eventType="touchUpInside" id="sRk-X4-ZVA"/>
                                             <segue destination="YKn-S5-MrF" kind="show" id="myO-gf-2a7"/>
@@ -61,8 +70,18 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-8j-Wmw">
-                                                <rect key="frame" x="152.5" y="167" width="49" height="30"/>
-                                                <state key="normal" title="Submit"/>
+                                                <rect key="frame" x="135.5" y="167" width="83" height="38"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onSubmitDetails:" destination="5po-D5-K3n" eventType="touchUpInside" id="oyF-3u-XPh"/>
                                                 </connections>

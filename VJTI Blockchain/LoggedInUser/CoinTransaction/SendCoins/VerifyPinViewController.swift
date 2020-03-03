@@ -35,9 +35,14 @@ class VerifyPinViewController: UIViewController {
         passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigits)
         passwordContainerView.delegate = self;
         
+        
+        
         passwordContainerView.deleteButton.setImage(UIImage(imageLiteralResourceName: "delete-icon"), for: UIControl.State.normal);
         
         passwordContainerView.deleteButton.setTitle("", for: UIControl.State.normal)
+        
+        //PasswordContainerView.touchAuthenticationEnabled = false;
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

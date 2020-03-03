@@ -51,7 +51,7 @@ class TransactionDetailsViewController:UIViewController, UITextFieldDelegate {
         if totalCoins <= 0 {
             uiUtils.showAlertBox(
                 title: "Invalid Coin Amount",
-                message: "Please use a positive integer of cins for the transaction",
+                message: "Please use a positive integer of coins for the transaction",
                 sender: self)
             return
         }

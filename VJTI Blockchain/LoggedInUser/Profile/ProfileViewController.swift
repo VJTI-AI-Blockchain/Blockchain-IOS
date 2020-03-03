@@ -24,6 +24,10 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func copyButtonClick(_ sender: UIButton) {
         UIPasteboard.general.string = user.pubKeyStr
+        uiUtils.showAlertBox(
+        title: "Success",
+        message: "Public Key copied successfully",
+        sender: self)
     }
     
     @IBAction func backupProfileAction(_ sender: Any) {
