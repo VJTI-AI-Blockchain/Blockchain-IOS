@@ -32,7 +32,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-sS-ufR">
-                                        <rect key="frame" x="100" y="332" width="214.00000000000006" height="60"/>
+                                        <rect key="frame" x="-7" y="332" width="428" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="3YV-6N-VqL"/>
                                         </constraints>
@@ -143,7 +143,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain_coins" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-zl-Jgq">
-                                        <rect key="frame" x="100" y="30" width="214.00000000000006" height="120"/>
+                                        <rect key="frame" x="-7" y="30" width="428" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="8ED-EN-CQR"/>
                                         </constraints>
@@ -161,10 +161,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Vpy-6m-6ff">
-                                        <rect key="frame" x="119.5" y="271" width="175" height="175"/>
+                                        <rect key="frame" x="32" y="271" width="350" height="350"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="public Key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8h-cR-tlM">
-                                        <rect key="frame" x="82" y="471" width="250" height="20.5"/>
+                                        <rect key="frame" x="82" y="646" width="250" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="Iae-hl-OUw"/>
                                         </constraints>
@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tg-Hi-shC">
-                                <rect key="frame" x="67" y="259" width="0.0" height="18"/>
+                                <rect key="frame" x="67" y="189.5" width="0.0" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="hkX-yT-wi7"/>
                                 </constraints>
@@ -464,35 +464,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtB-BS-Wkk" customClass="QRCodeReaderView" customModule="QRCodeReader">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GCP-vc-dDs">
-                                        <rect key="frame" x="128.93030794152992" y="380" width="154" height="42.999999999999545"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Open Camera">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="scanInModalAction:" destination="eqE-Gw-a7B" eventType="touchUpInside" id="bBC-ng-fUj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="200" width="414" height="608"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GCP-vc-dDs">
+                                <rect key="frame" x="130" y="95" width="154" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Open Camera">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scanInModalAction:" destination="eqE-Gw-a7B" eventType="touchUpInside" id="bBC-ng-fUj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dco-Fj-yO2" firstAttribute="bottom" secondItem="gtB-BS-Wkk" secondAttribute="bottom" id="5Lg-Sj-ae2"/>
                             <constraint firstItem="gtB-BS-Wkk" firstAttribute="centerX" secondItem="Dco-Fj-yO2" secondAttribute="centerX" id="IxS-iv-EUz"/>
                             <constraint firstItem="gtB-BS-Wkk" firstAttribute="leading" secondItem="Xe2-Jc-Ghn" secondAttribute="leading" id="l0H-DS-CwO"/>
-                            <constraint firstItem="gtB-BS-Wkk" firstAttribute="top" secondItem="Dco-Fj-yO2" secondAttribute="top" id="t5N-eE-lx6"/>
+                            <constraint firstItem="gtB-BS-Wkk" firstAttribute="top" secondItem="Dco-Fj-yO2" secondAttribute="top" constant="200" id="t5N-eE-lx6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dco-Fj-yO2"/>
                     </view>
@@ -835,6 +833,7 @@
         <image name="transaction" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vi4-6p-E2Q"/>
         <segue reference="5UY-Pu-CQa"/>
     </inferredMetricsTieBreakers>
 </document>
