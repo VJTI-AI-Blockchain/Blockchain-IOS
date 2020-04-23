@@ -1,6 +1,6 @@
 # Blockchain-iOS
 
-The official iOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJTI-AI-Blockchain/VJTI-Blockchain-Wallet).
+The official iOS port for the LBSNAA Blockchain Wallet APP.
 
 ## Development Software:
 - XCode : >=10 (my version: 10.2.1)
@@ -14,12 +14,12 @@ The official iOS port for the [VJTI Blockchain Wallet APP](https://github.com/VJ
 - [x] Receving coins via QR Code
 - [x] Create Backup Profile encrypted file (iOS backup can be retrieved on Android app and visa versa)
 - [x] Send Coins using public key string
-- [ ] Scan QR Code (awaiting testing)
+- [x] Scan QR Code (awaiting testing)
 - [ ] Retrieve backup (awaiting testing)
 - [X] Cross Device View Support
 - [X] Identicons Match Android Identicons
 - [X] Profanity filter added for transactions
-- [ ] Public Beta Testing
+- [x] Public Beta Testing
 
 ### Installation Instructions
 1. Open the 'VJTI Blockchain.xcworkspace' to work on the project
@@ -86,3 +86,4 @@ Used in formatting bytes to base10 formatted data to be sent to the server for t
 
 #### Developer
 > Ameya Daddikar: ameyadaddikar@gmail.com
+> Padmashree Samant: padmashree.samant@gmail.com
