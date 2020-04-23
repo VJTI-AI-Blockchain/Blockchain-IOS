@@ -3,25 +3,25 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "logo_app_40x40.png",
+      "filename" : "ic_launcher_foreground_40px.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "logo_app_60x60.png",
+      "filename" : "ic_launcher_foreground_60px.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "logo_app_58x58.png",
+      "filename" : "ic_launcher_foreground_58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "logo_app_87x87.png",
+      "filename" : "ic_launcher_foreground_87px.png",
       "scale" : "3x"
     },
     {

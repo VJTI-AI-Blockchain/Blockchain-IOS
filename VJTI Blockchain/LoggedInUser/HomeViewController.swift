@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
                     }
                 case .failure(_):
                         self.coinCountLabel.text = "Unable to retrieve balance"
+            
 
             }
             self.scrollView.refreshControl?.endRefreshing()

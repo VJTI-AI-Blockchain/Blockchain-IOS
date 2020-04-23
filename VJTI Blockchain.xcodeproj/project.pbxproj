@@ -74,7 +74,7 @@
 		E40884C1229D325300618ACF /* uiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiUtils.swift; sourceTree = "<group>"; };
 		E40884C3229D374C00618ACF /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
 		E40C9D9022A7A772002FD9AB /* AndroidIdenticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidIdenticon.swift; sourceTree = "<group>"; };
-		E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VJTI Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445EA1722956A6900B1C1EB /* LBSNAA Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBSNAA Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E445EA1A22956A6900B1C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E445EA1C22956A6900B1C1EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E445EA2122956A6900B1C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		E445EA1822956A6900B1C1EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */,
+				E445EA1722956A6900B1C1EB /* LBSNAA Blockchain.app */,
 				E445EA2D22956A6B00B1C1EB /* VJTI BlockchainTests.xctest */,
 				E445EA3822956A6B00B1C1EB /* VJTI BlockchainUITests.xctest */,
 			);
@@ -330,7 +330,7 @@
 			);
 			name = "VJTI Blockchain";
 			productName = "VJTI Blockchain";
-			productReference = E445EA1722956A6900B1C1EB /* VJTI Blockchain.app */;
+			productReference = E445EA1722956A6900B1C1EB /* LBSNAA Blockchain.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E445EA2C22956A6B00B1C1EB /* VJTI BlockchainTests */ = {
@@ -710,7 +710,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain-pearl20";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LBSNAA Blockchain";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -731,7 +731,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vjti-bct.in.VJTI-Blockchain-jash13";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LBSNAA Blockchain";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

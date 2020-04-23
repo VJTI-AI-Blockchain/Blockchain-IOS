@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5po-D5-K3n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5po-D5-K3n">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,33 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpQ-iW-iBl">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpQ-iW-iBl">
                                 <rect key="frame" x="0.0" y="21" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or Restore a Backup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpU-g9-Ws2">
-                                        <rect key="frame" x="109" y="547" width="194" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHd-by-ule">
-                                        <rect key="frame" x="175" y="582" width="59" height="33"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
-                                        <state key="normal" title="Restore">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="18"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="onBackupButtonClick:" destination="5po-D5-K3n" eventType="touchUpInside" id="sRk-X4-ZVA"/>
-                                            <segue destination="YKn-S5-MrF" kind="show" id="myO-gf-2a7"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-d6-0dj">
                                         <rect key="frame" x="112.5" y="212" width="189" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
@@ -126,19 +102,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="3Y6-u0-kTP" secondAttribute="centerX" constant="3" id="98A-dY-Hwt"/>
-                                    <constraint firstItem="hpU-g9-Ws2" firstAttribute="top" secondItem="Zj0-64-hkL" secondAttribute="bottom" constant="34" id="9wX-Vd-O1i"/>
                                     <constraint firstItem="Xv8-d6-0dj" firstAttribute="centerX" secondItem="cpQ-iW-iBl" secondAttribute="centerX" id="A5A-ZP-58F"/>
                                     <constraint firstItem="Zj0-64-hkL" firstAttribute="centerX" secondItem="cpQ-iW-iBl" secondAttribute="centerX" id="BEa-w4-05b"/>
-                                    <constraint firstAttribute="bottom" secondItem="eHd-by-ule" secondAttribute="bottom" constant="235" id="CXq-mq-UNF"/>
                                     <constraint firstItem="Zj0-64-hkL" firstAttribute="leading" secondItem="cpQ-iW-iBl" secondAttribute="leading" constant="30" id="IJY-Vz-sJh"/>
                                     <constraint firstItem="Xv8-d6-0dj" firstAttribute="top" secondItem="XKl-w9-JOt" secondAttribute="bottom" constant="10" id="JJf-ab-QuZ"/>
-                                    <constraint firstItem="eHd-by-ule" firstAttribute="centerX" secondItem="cpQ-iW-iBl" secondAttribute="centerX" id="KaS-c1-bzv"/>
                                     <constraint firstItem="Zj0-64-hkL" firstAttribute="top" secondItem="3Y6-u0-kTP" secondAttribute="bottom" constant="24" id="LYT-5X-myi"/>
                                     <constraint firstItem="XKl-w9-JOt" firstAttribute="top" secondItem="cpQ-iW-iBl" secondAttribute="top" constant="74" id="MzH-71-6Yl"/>
                                     <constraint firstAttribute="trailing" secondItem="Zj0-64-hkL" secondAttribute="trailing" constant="30" id="VNn-rn-B31"/>
                                     <constraint firstAttribute="centerX" secondItem="XKl-w9-JOt" secondAttribute="centerX" id="tb3-dB-gL3"/>
-                                    <constraint firstItem="eHd-by-ule" firstAttribute="top" secondItem="hpU-g9-Ws2" secondAttribute="bottom" constant="10" id="uad-pb-9QV"/>
-                                    <constraint firstItem="hpU-g9-Ws2" firstAttribute="centerX" secondItem="cpQ-iW-iBl" secondAttribute="centerX" id="wne-cB-DkB"/>
                                     <constraint firstItem="3Y6-u0-kTP" firstAttribute="top" secondItem="Xv8-d6-0dj" secondAttribute="bottom" constant="37" id="yTi-Rw-DVG"/>
                                 </constraints>
                             </scrollView>
@@ -167,7 +138,7 @@
             <objects>
                 <viewController id="YKn-S5-MrF" customClass="RestoreViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TcH-ZL-lre">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wET-Po-qmE"/>

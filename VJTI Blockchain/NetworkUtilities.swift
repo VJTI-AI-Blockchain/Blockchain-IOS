@@ -12,7 +12,7 @@ import Foundation
 class NetworkUtilities {
     
     private static let api_rotocol  = "http://"
-    private static let host_addr    = "chain.vjti-bct.in"
+    private static let host_addr    = "chain.lbsnaa.in"
     
     static let port_num     = "9000"
     
